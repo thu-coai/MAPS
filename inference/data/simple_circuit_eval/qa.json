@@ -1,0 +1,792 @@
+[
+    {
+        "id": "1-9(d)",
+        "question": "求题图 1-9(d)所示电路中的电流I。",
+        "golden_answer": {
+            "$I$": "$-0.5 \\mathrm{~A}$"
+        },
+        "solution": "$I=\\frac{-3+2}{2}=-0.5 \\mathrm{~A}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-10(a)",
+        "question": "求题图1-10所示电路中的电压$U_{\\mathrm{ab}}$。",
+        "golden_answer": {
+            "$U_{\\mathrm{ab}}$": "$2 \\mathrm{~V}$"
+        },
+        "solution": "$U_{\\mathrm{ab}}=-\\frac{2}{2+4} \\times 6+4=2 \\mathrm{~V}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-10(b)",
+        "question": "求题图1-10所示电路中的电压 $U_{\\mathrm{ab}}$。",
+        "golden_answer": {
+            "$U_{\\mathrm{ab}}$": "$-5 \\mathrm{~V}$"
+        },
+        "solution": "$U_{\\mathrm{ab}}=-8+1 \\times 3=-5 \\mathrm{~V}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-11",
+        "question": "求题图1-11所示电路中的电压$U_{\\mathrm{AB}}$, $U_{\\mathrm{BC}}$, $U_{\\mathrm{CA}}$和$U_{\\mathrm{BD}}$。",
+        "golden_answer": {
+            "$U_{\\mathrm{AB}}$": "$-3.14 \\mathrm{~V}$",
+            "$U_{\\mathrm{BC}}$": "$1.14 \\mathrm{~V}$",
+            "$U_{\\mathrm{CA}}$": "$2 \\mathrm{~V}$",
+            "$U_{\\mathrm{BD}}$": "$3.05 \\mathrm{~V}$"
+        },
+        "solution": "设回路中的电流如题图 1-11(a)所示。\n$$\\begin{array}{l}I=\\frac{6}{12+20+30+1}=0.0952 \\mathrm{~A} \\\\U_{\\mathrm{AB}}=-2-12 \\times 0.0952=-3.14 \\mathrm{~V} \\\\U_{\\mathrm{BC}}=12 \\times 0.0952=1.14 \\mathrm{~V} \\\\U_{\\mathrm{CA}}=2 \\mathrm{~V} \\\\U_{\\mathrm{BD}}=(12+20) \\times 0.0952=3.05 \\mathrm{~V}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-14(a)",
+        "question": "求题图1-14所示各电路中所标出的电压、电流。",
+        "golden_answer": {
+            "$I$": "$2 \\mathrm{~A}$"
+        },
+        "solution": "$I=\\frac{9-3}{3}=2 \\mathrm{~A}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-14(b)",
+        "question": "求题图1-14所示各电路中所标出的电压、电流。",
+        "golden_answer": {
+            "$U$": "$8 \\mathrm{~V}$"
+        },
+        "solution": "$U=100(0.12-0.04)=8 \\mathrm{~V}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-14(c)",
+        "question": "求题图1-14所示各电路中所标出的电压、电流。",
+        "golden_answer": {
+            "$U$": "$19 \\mathrm{~V}$"
+        },
+        "solution": "$U=3 \\times 3+2 \\times(3+2)=19 \\mathrm{~V}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-14(d)",
+        "question": "求题图1-14所示各电路中所标出的电压、电流。",
+        "golden_answer": {
+            "$I$": "$-5 \\mathrm{~A}$"
+        },
+        "solution": "$I=-\\frac{9}{3}-\\frac{9+3}{6}=-5 \\mathrm{~A}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-15(a)",
+        "question": "求题图1-15所示电路中所标出的各电压和电流。",
+        "golden_answer": {
+            "$I$": "$-2 \\mathrm{~A}$"
+        },
+        "solution": "$12=2(4-I) \\Rightarrow I=-2 \\mathrm{~A}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-15(b)",
+        "question": "求题图1-15所示电路中所标出的各电压和电流。",
+        "golden_answer": {
+            "$U$": "$0$"
+        },
+        "solution": "$U=-4 \\times 3+12=0$",
+        "is_forward": true
+    },
+    {
+        "id": "1-15(c)",
+        "question": "求题图1-15所示电路中所标出的各电压和电流。",
+        "golden_answer": {
+            "$I$": "$2 \\mathrm{~A}$",
+            "$U$": "$36 \\mathrm{~V}$"
+        },
+        "solution": "$12=2(8-I) \\Rightarrow I=2 \\mathrm{~A}, U=3 \\times 8+12=36 \\mathrm{~V}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-15(d)",
+        "question": "求题图1-15所示电路中所标出的各电压和电流。",
+        "golden_answer": {
+            "$I$": "$-4 \\mathrm{~A}$",
+            "$U_{1}$": "$15 \\mathrm{~V}$",
+            "$U_{2}$": "$13 \\mathrm{~V}$"
+        },
+        "solution": "$1 \\times(3+2-I)=9 \\Rightarrow I=-4 \\mathrm{~A}, U_{1}=2 \\times 3+9=15 \\mathrm{~V}, U_{2}=2 \\times 2+9=13 \\mathrm{~V}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-16",
+        "question": "求题图1-16所示电路中的电压$U_{1}$和电流$I_{1}$,$I_{2}$。设：（3）$U_{\\mathrm{S}}=6 \\mathrm{~V}$。",
+        "golden_answer": {
+            "$U_{1}$": "$-8 \\mathrm{~V}$",
+            "$I_{1}$": "$5 \\mathrm{~A}$",
+            "$I_{2}$": "$1 \\mathrm{~A}$"
+        },
+        "solution": "$U_{1}$、$I_{1}$与$U_{\\mathrm{S}}$无关, 且可求得\n$U_{1}=-4 \\times 2=-8 \\mathrm{~V}, \\quad I_{1}=\\frac{9}{3}+2=5 \\mathrm{~A}$\n$I_{2}$与$U_{\\mathrm{S}}$有关, 有\n当$U_{\\mathrm{S}}=6 \\mathrm{~V}$时,$I_{2}=-2+\\frac{6}{2}=1 \\mathrm{~A}$",
+        "is_forward": true
+    },
+    {
+        "id": "1-18",
+        "question": "电路如题图1-18所示。求图中的电流$I_{1}$,$I_{2}$和$I_{3}$。",
+        "golden_answer": {
+            "$I_{1}$": "$5 \\mathrm{~A}$",
+            "$I_{2}$": "$-5.67 \\mathrm{~A}$",
+            "$I_{3}$": "$-6.67 \\mathrm{~A}$"
+        },
+        "solution": "$$\\begin{array}{l}I_{1}=\\frac{2+3-1}{1}+\\frac{3-1}{2}=5 \\mathrm{~A} \\\\I_{2}=\\frac{-3-2}{3}+\\frac{1-3-2}{1}=-5.67 \\mathrm{~A} \\\\I_{3}=I_{2}+\\frac{1-3}{2}=-6.67 \\mathrm{~A}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-19",
+        "question": "电路如题图1-19所示。求图中的电压$U_{1}$,$U_{2}$和$U_{3}$。",
+        "golden_answer": {
+            "$U_{1}$": "$5 \\mathrm{~V}$",
+            "$U_{2}$": "$5 \\mathrm{~V}$",
+            "$U_{3}$": "$-6 \\mathrm{~V}$"
+        },
+        "solution": "$$\\begin{array}{l}U_{1}=0.5 \\times(3-1)+1 \\times(3-1+2)=5 \\mathrm{~V} \\\\U_{2}=1 \\times(3-1+2)+0.2 \\times(3+2)=5 \\mathrm{~V} \\\\U_{3}=-U_{2}+0.5 \\times(1-2)=-6 \\mathrm{~V}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-20(a)",
+        "question": "求题图1-20(a)所示电路中所标出的各电压和电流。",
+        "golden_answer": {
+            "$U$": "$-10 \\mathrm{~V}$",
+            "$I_{1}$": "$0$",
+            "$I_{2}$": "$-10 \\mathrm{~A}$"
+        },
+        "solution": "$$\\begin{array}{l}U=3 \\times 6+12-40=-10 \\mathrm{~V} \\\\I_{1}=\\frac{12}{2}-6=0 \\\\I_{2}=-6-\\frac{40}{10}=-10 \\mathrm{~A}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-20(b)",
+        "question": "求题图1-20(b)所示电路中所标出的各电压和电流。",
+        "golden_answer": {
+            "$I_{1}$": "$-3 \\mathrm{~A}$",
+            "$I_{2}$": "$4 \\mathrm{~A}$"
+        },
+        "solution": "$$\\begin{array}{l}I_{1}=-\\frac{6}{3}+4+\\frac{-9-6}{3}=-3 \\mathrm{~A} \\\\I_{2}=\\frac{9}{3}-4+\\frac{6+9}{3}=4 \\mathrm{~A}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-22",
+        "question": "求题图1-22所示电路中各电源发出的功率。",
+        "golden_answer": {
+            "$P_{10 \\mathrm{~V}}$": "$30 \\mathrm{~W}$",
+            "$P_{3 \\mathrm{~A}}$": "$15 \\mathrm{~W}$",
+            "$P_{4A}$": "$60 \\mathrm{~W}$",
+            "$P_{15V}$": "$-135 \\mathrm{~W}$",
+            "$P_{2A}$": "$30 \\mathrm{~W}$"
+        },
+        "solution": "$10 \\mathrm{V}$电压源发出的功率为$$P_{1}=10 \\times 3=30 \\mathrm{~W}$$$3 \\mathrm{A}$电流源发出的功率为$$P_{2}=(-10+15) \\times 3=15 \\mathrm{W}$$4A电流源发出的功率为$$P_{3}=15 \\times 4=60 \\mathrm{~W}$$$15 \\mathrm{V}$电压源发出的功率为$$P_{4}=(-3-4-2) \\times 15=-135 \\mathrm{~W}$$$2 \\mathrm{A}$电流源发出的功率为$$P_{5}=15 \\times 2=30 \\mathrm{~W}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-23",
+        "question": "求题图1-23所示电路中负载吸收的功率。",
+        "golden_answer": {
+            "$P$": "$250 \\mathrm{~W}$"
+        },
+        "solution": "$$\\begin{aligned}I & =3+\\frac{60-40}{10}=5 \\mathrm{~A} \\\\U & =20-2 I+40=50 \\mathrm{~V}\\end{aligned}$$\n负载吸收的功率为$$P=U I=250 \\mathrm{W}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-24",
+        "question": "两台直流电机并行的原理电路如题图1-24所示。其电动势和内阻分别为$U_{\\mathrm{S} 1}=232 \\mathrm{V}$,$U_{\\mathrm{S} 2}=202 \\mathrm{V}$,$R_{\\mathrm{n} 1}=0.04 \\Omega$,$R_{\\mathrm{n} 2}=0.06 \\Omega$。\n(2) 求端电压$U_{\\mathrm{ab}}$;",
+        "golden_answer": {
+            "$U_{\\mathrm{ab}}$": "$220 \\mathrm{V}$"
+        },
+        "solution": "端电压为$$U_{\\mathrm{ab}}=U_{\\mathrm{S} 2}+R_{\\mathrm{n} 2} I=202+0.06 \\times 300=220 \\mathrm{V}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-25",
+        "question": "已知题图1-25所示电路中,$U_{\\mathrm{S}}=3 \\mathrm{V}$,$I_{\\mathrm{S}}=1 \\mathrm{A}$,$R_{1}=3 \\Omega$,$R_{2}=1 \\Omega$,$R_{3}=2 \\Omega$。求电压源$U_{\\mathrm{S}}$和电流源$I_{\\mathrm{S}}$的输出功率$P_{U}$和$P_{I}$。",
+        "golden_answer": {
+            "$P_{U}$": "$0$",
+            "$P_{I}$": "$6 \\mathrm{W}$"
+        },
+        "solution": "$$\\begin{array}{l}I=I_{\\mathrm{S}}-\\frac{U_{\\mathrm{S}}}{R_{1}}=1-\\frac{3}{3}=0 \\\\U=-\\left(R_{2}+R_{3}\\right) I_{\\mathrm{S}}-U_{\\mathrm{S}}=-(1+2) \\times 1-3=-6 \\mathrm{V}\\end{array}$$电压源$U_{\\mathrm{S}}$的输出功率为$$P_{U}=-U_{\\mathrm{S}} I=0$$电流源$I_{\\mathrm{S}}$的输出功率为$$P_{I}=-U I_{\\mathrm{S}}=6 \\times 1=6 \\mathrm{W}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-30",
+        "question": "求题图1-30示电路中独立电源提供的功率。",
+        "golden_answer": {
+            "$P$": "$108 \\mathrm{W}$"
+        },
+        "solution": "列方程如下:$$\\frac{U}{2}+0.5 U+\\frac{U}{3}=13$$解得$U=9 \\mathrm{V}$, 则独立电流源提供的功率为$$P=U \\times 12=9 \\times 12=108 \\mathrm{W}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-31",
+        "question": "题图1-31为一充电电路。\n(3)如果电池电压增加到$12.6 \\mathrm{V}$, 电流I应是多少?",
+        "golden_answer": {
+            "$I$": "$2.82 \\mathrm{A}$"
+        },
+        "solution": "如果电池电压增加到$12.6 \\mathrm{V}$, 则方程为\n$$\\left\\{\\begin{array}{l}16-12.6=0.3 I+0.2 U_{1} \\\\U_{1}=0.06 I+12.6\\end{array}\\right.$$\n解得电流$I=2.82 \\mathrm{A}$。",
+        "is_forward": true
+    },
+    {
+        "id": "1-32",
+        "question": "求题图1-32所示电路中每个元件所吸收的功率。",
+        "golden_answer": {
+            "$P_{50 \\mathrm{V}}$": "$-169 \\mathrm{W}$",
+            "$P_{U_{x}}$": "$68.5 \\mathrm{W}$",
+            "$P_{0.2 U_{x}}$": "$-13.7 \\mathrm{W}$",
+            "$P_{10 \\Omega}$": "$114 \\mathrm{W}$"
+        },
+        "solution": "列写方程如下:$$\\left\\{\\begin{array}{l}50=0.2 U_{x}+10 I-U_{x} \\\\U_{x}=-6 I\\end{array}\\right.$$解得$I=3.378 \\mathrm{A}$。则$50 \\mathrm{V}$电压源吸收的功率为$$P_{1}=-50 I=-50 \\times 3.378=-169 \\mathrm{W}$$受控源$U_{x}$吸收的功率为$$P_{2}=-U_{x} I=6 I \\times I=68.5 \\mathrm{W}$$受控源$0.2 U_{x}$吸收的功率为$$P_{3}=0.2 U_{x} I=0.2 \\times(-6 I) \\times I=-13.7 \\mathrm{W}$$$10 \\Omega$电阻吸收的功率为$$P_{4}=10 I^{2}=114 \\mathrm{W}$$",
+        "is_forward": true
+    },
+    {
+        "id": "1-34",
+        "question": "求题图1-34所示电路中各元件的功率, 并校验功率守恒。",
+        "golden_answer": {
+            "$P_{5 \\mathrm{V}{ 发 }}$": "$15 \\mathrm{W}$",
+            "$P_{3 \\mathrm{A}{ 发 }}$": "$-3 \\mathrm{W}$",
+            "$P_{\\text {R吸 }}$": "$8 \\mathrm{W}$",
+            "$P_{2 I \\text { 发 }}$": "$-4 \\mathrm{W}$"
+        },
+        "solution": "电压、电流参考方向如题图1-34(a)所示。\n可分别求得各电压、电流:$$\\begin{array}{l}I=\\frac{1}{1+2} \\times 3=1 \\mathrm{A} \\\\I_{1}=3-I=2 \\mathrm{A} \\\\I_{2}=\\frac{2 I}{2}=1 \\mathrm{A} \\\\I_{3}=3-I_{2}=2 \\mathrm{A} \\\\U=2 I-5+2 I=-1 \\mathrm{V}\\end{array}$$各元件的功率分别为:\n$6 \\mathrm{V}$电压源发出的功率为$$P_{5 \\mathrm{V}{ 发 }}=5 \\times 3=15 \\mathrm{W}$$$3 \\mathrm{A}$电流源发出的功率为$$P_{3 \\mathrm{A}{ 发 }}=-1 \\times 3=-3 \\mathrm{W}$$$2I$受控源发出的功率为$$P_{2 I \\text { 发 }}=-2 I \\times I_{3}=-2 \\times 1 \\times 2=-4 \\mathrm{W}$$三个电阻吸收的总功率为$$P_{\\text {R吸 }}=2 I^{2}+1 \\times I_{1}^{2}+2 I_{2}^{2}=8 \\mathrm{W}$$可见, 有$$P_{R \\text { 吸 }}=P_{5 \\mathrm{V} \\text { 发 }}+P_{3 \\mathrm{A} \\text { 发 }}+P_{2 I \\text { 发 }}$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-1(a)",
+        "question": "求题图2-1所示各电路的入端电阻$R_{\\mathrm{AB}}$。",
+        "golden_answer": {
+            "$R_{\\mathrm{AB}}$": "$3.43 \\Omega$"
+        },
+        "solution": "$R_{\\mathrm{AB}}=(2+4) / /(2+6)=\\frac{6 \\times 8}{6+8}=3.43 \\Omega$",
+        "is_forward": true
+    },
+    {
+        "id": "2-1(b)",
+        "question": "求题图2-1所示各电路的入端电阻$R_{\\mathrm{AB}}$。",
+        "golden_answer": {
+            "$R_{\\mathrm{AB}}$": "$3.40 \\Omega$"
+        },
+        "solution": "$R_{\\mathrm{AB}}=\\frac{2 \\times 2}{2+2}+\\frac{4 \\times 6}{4+6}=1+2.4=3.40 \\Omega$",
+        "is_forward": true
+    },
+    {
+        "id": "2-1(c)",
+        "question": "求题图2-1所示各电路的入端电阻$R_{\\mathrm{AB}}$。",
+        "golden_answer": {
+            "$R_{\\mathrm{AB}}$": "$3.40 \\Omega$"
+        },
+        "solution": "$R_{\\mathrm{AB}}=\\frac{2 \\times 2}{2+2}+\\frac{4 \\times 6}{4+6}=1+2.4=3.40 \\Omega$",
+        "is_forward": true
+    },
+    {
+        "id": "2-1(d)",
+        "question": "求题图2-1所示各电路的入端电阻$R_{\\mathrm{AB}}$。",
+        "golden_answer": {
+            "$R_{\\mathrm{AB}}$": "$5.45 \\Omega$"
+        },
+        "solution": "$R_{\\mathrm{AB}}=(6 / / 6+9) / / 10=5.45 \\Omega$",
+        "is_forward": true
+    },
+    {
+        "id": "2-1(e)",
+        "question": "求题图2-1所示各电路的入端电阻$R_{\\mathrm{AB}}$。",
+        "golden_answer": {
+            "$R_{\\mathrm{AB}}$": "$3.50 \\Omega$"
+        },
+        "solution": "$R_{\\mathrm{AB}}=[(4 / / 4)+(10 / / 10)] / / 7=\\frac{7}{2}=3.50 \\Omega$",
+        "is_forward": true
+    },
+    {
+        "id": "2-1(f)",
+        "question": "求题图2-1所示各电路的入端电阻$R_{\\mathrm{AB}}$。",
+        "golden_answer": {
+            "$R_{\\mathrm{AB}}$": "$2.76 \\Omega$"
+        },
+        "solution": "将两个星形连接转换成三角形连接, 求得$R_{\\mathrm{AB}}=2.76 \\Omega$\n或按下式计算:$$R_{\\mathrm{AB}}=(4 / / 10+3) / /(5 / / 9+2)=\\frac{2993}{1085}=2.76 \\Omega$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-2(a)",
+        "question": "求题图2-2所示各电路的入端电阻R。",
+        "golden_answer": {
+            "$R_{\\mathrm{AB}}$": "$10 \\Omega$"
+        },
+        "solution": "电桥平衡,$5 \\Omega$电阻支路可开路, 再利用串并联求得$$R=20 / /(30+20 / / 20) / /(60 / / 60+10)=10 \\Omega$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-2(b)",
+        "question": "求题图2-2所示各电路的入端电阻R。",
+        "golden_answer": {
+            "$R_{\\mathrm{AB}}$": "$10 \\Omega$"
+        },
+        "solution": "利用串并联，可得$$R=[(6 / / 6)+3] / /[(4 / / 4)+1]+8=10 \\Omega$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-3(c)",
+        "question": "求题图2-3所示各电路的入端电阻$R_{\\mathrm{ab}}$。",
+        "golden_answer": {
+            "$R_{\\mathrm{ab}}$": "$1.67 \\mathrm{k} \\Omega$"
+        },
+        "solution": "作$\\mathrm{Y} \\rightarrow \\Delta$变换,如题图 2-3(a)所示。\n再利用串并联结果, 可得$$R_{\\mathrm{ab}}=2.444 \\times 10^{3} / /\\left(3.667 \\times 10^{3}+1.571 \\times 10^{3}\\right)=1.67 \\mathrm{k} \\Omega$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-8",
+        "question": "试用电源等效变换方法求题图2-8所示电路中的电流i。",
+        "golden_answer": {
+            "i": "$0.3A$"
+        },
+        "solution": "题图2-8经电源等效变换为题图2-8(a)所示，进一步可变换为题图2-8(b)所示。\n由题图2-8(b)可得$$i=\\frac{12-9}{2+3+5}=0.3 \\mathrm{A}$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-9",
+        "question": "试求题图2-9所示电路中的电压U。",
+        "golden_answer": {
+            "U": "$6.25V$"
+        },
+        "solution": "用电源等效变换，变换过程如题图2-9(a)所示。\n由等效电路可求得$$U=\\frac{\\frac{5}{3} \\times 1}{\\frac{5}{3}+1} \\times 10=6.25 \\mathrm{V}$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-11",
+        "question": "试求题图2-11所示电路中的电流I。",
+        "golden_answer": {
+            "I": "$-1.1A$"
+        },
+        "solution": "对原电路进行电源变换，变换过程如题图2-11(a)所示。\n由等效电路得$$I=\\frac{14-25}{2+3+5}=-1.1 \\mathrm{A}$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-12",
+        "question": "题图2-12所示电路中，已知电压源电压$U_{\\mathrm{S} 1}=U_{\\mathrm{S} 6}=20 \\mathrm{V}, U_{\\mathrm{S} 2}=U_{\\mathrm{S} 5}=10 \\mathrm{V}, U_{\\mathrm{S} 4}=15 \\mathrm{V}$，电流源电流$I_{\\mathrm{S} 3}=10 \\mathrm{A}$，电阻$R_{1}=10 \\Omega, R_{2}=5 \\Omega, R_{3}=1 \\Omega, R_{4}=2 \\Omega, R_{5}=R_{6}=4 \\Omega$。试求电路中各支路的电流。",
+        "golden_answer": {
+            "$I_{1}$": "$1.2A$",
+            "$I_{2}$": "$0.4A$",
+            "$I_{3}$": "$11.6A$",
+            "$I_{4}$": "$1.6A$",
+            "$I_{5}$": "$4.55A$",
+            "$I_{6}$": "$2.95A$"
+        },
+        "solution": "题图2-12所示电路作电源等效变换，如题图2-12(a)所示。\n由等效电路得$$\\begin{aligned}I_{4} & =\\frac{-10+\\frac{40}{3}-5+15}{2+1+\\frac{10}{3}+2}=1.6 \\mathrm{A} \\\\U_{1} & =-\\frac{10}{3} \\times 1.6+\\frac{40}{3}=8 \\mathrm{V}, \\quad U_{2}=5+2 \\times 1.6=8.2 \\mathrm{V}\\end{aligned}$$再由原电路可得$$\\begin{array}{l}I_{3}=I_{4}+I_{\\mathrm{S} 4}=1.6+10=11.6 \\mathrm{A} \\\\I_{1}=\\frac{U_{\\mathrm{S} 1}-U_{1}}{R_{1}}=\\frac{20-8}{10}=1.2 \\mathrm{A} \\\\I_{2}=\\frac{U_{\\mathrm{S} 2}-U_{1}}{R_{2}}=\\frac{10-8}{5}=0.4 \\mathrm{A} \\\\I_{5}=\\frac{U_{2}+U_{\\mathrm{S} 5}}{R_{5}}=\\frac{8.2+10}{4}=4.55 \\mathrm{A} \\\\I_{6}=\\frac{U_{\\mathrm{S} 6}-U_{2}}{R_{6}}=\\frac{20-8.2}{4}=2.95 \\mathrm{A}\\end{array}$$说明：注意$I_{6}$的参考方向。",
+        "is_forward": true
+    },
+    {
+        "id": "2-15",
+        "question": "求题图2-15所示电路中电压源、电流源发出的功率。",
+        "golden_answer": {
+            "$P_{U}$": "$172.5W$",
+            "$P_{I}$": "$374W$"
+        },
+        "solution": "电压、电流参考方向及电源等效变换过程如题图2-15(a)所示，等效变换的目的是先求$U_{x}$。\n由等效电路可求得$$U_{x}=\\frac{2 \\times 6}{2+6} \\times 9=13.5 \\mathrm{V}$$再由变换前电路可得$$\\begin{array}{l}I=-I_{1}+\\frac{30}{10}=-\\frac{U_{x}-30}{6}+3=5.75 \\mathrm{A} \\\\U=20 \\times 4+U_{x}=93.5 \\mathrm{V}\\end{array}$$电压源、电流源发出的功率分别为$$\\begin{array}{l}P_{U}=30 I=30 \\times 5.75=172.5 \\mathrm{W} \\\\P_{I}=U \\times 4=93.5 \\times 4=374 \\mathrm{W}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-17",
+        "question": "试求题图2-17所示电路中的电压$U_{ab}$。",
+        "golden_answer": {
+            "$U_{ab}$": "$4V$"
+        },
+        "solution": "列写KVL方程如下：$$8 I=2(1-I)+2(2 I+1-I)$$解得$I=0.5A$。所以$$U_{\\mathrm{ab}}=8 I=4 \\mathrm{V}$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-19",
+        "question": "题图2-19所示电路中，已知$i_{\\mathrm{S}}=1.2 \\mathrm{A}, R_{1}=30 \\Omega, R_{2}=40 \\Omega, R_{3}=10 \\Omega, R_{4}=20 \\Omega, g=0.1 \\mathrm{S}$。试求电压u。",
+        "golden_answer": {
+            "u": "$9V$"
+        },
+        "solution": "参考方向如题图2-19(a)所示。$$i_{R 2}=i_{\\mathrm{S}}-\\frac{u}{R_{3}}=1.2-0.1 u, \\quad i_{R 4}=i_{R 2}-g u=1.2-0.2 u$$由KVL，可得$$u=R_{4} i_{R 4}+\\left(R_{1}+R_{2}\\right) i_{R 2}=20 \\times(1.2-0.2 u)+70 \\times(1.2-0.1 u)$$解得$u=9V$。",
+        "is_forward": true
+    },
+    {
+        "id": "2-20(a)",
+        "question": "用电阻的Y−Δ变换方法，求题图2-20所示电路的入端电阻$R_{AB}$。",
+        "golden_answer": {
+            "$R_{AB}$": "$4.86\\Omega$"
+        },
+        "solution": "对题图(a)进行Δ→Y变换。\n题图2-20(a)等效电路如题图2-20(e)所示。$$R_{\\mathrm{AB}}=(2+2) / /(8+2)+2=4.86 \\Omega$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-20(b)",
+        "question": "用电阻的Y−Δ变换方法，求题图2-20所示电路的入端电阻$R_{AB}$。",
+        "golden_answer": {
+            "$R_{AB}$": "$1.94\\Omega$"
+        },
+        "solution": "对题图(b)进行Δ→Y变换。\n题图2-20(b)等效电路如题图2-20(f)所示。$$R_{\\mathrm{AB}}=5 / /[1+(2+1.67) / /(10+2)]=1.94 \\Omega$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-20(c)",
+        "question": "用电阻的Y−Δ变换方法，求题图2-20所示电路的入端电阻$R_{AB}$。",
+        "golden_answer": {
+            "$R_{AB}$": "$2.5\\Omega$"
+        },
+        "solution": "对题图(c)进行Δ→Y变换。\n题图2-20(c)等效电路如题图2-20(g)所示。$$R_{\\mathrm{AB}}=(0.6+0.4) / /(0.5+0.5)+2=2.5 \\Omega$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-20(d)",
+        "question": "用电阻的Y−Δ变换方法，求题图2-20所示电路的入端电阻$R_{AB}$。",
+        "golden_answer": {
+            "$R_{AB}$": "$8.16\\Omega$"
+        },
+        "solution": "对题图(d)进行Δ→Y变换。\n题图2-20(d)等效变换过程如题图2-20(h)所示。$$R_{\\mathrm{AB}}=3.55+(0.431+8) / /(0.508+9.67)=8.16 \\Omega$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-23",
+        "question": "电路如题图2-23所示。已知电路参数$R_{1} = R_{6} =2\\Omega ,R_{2} = R_{5} =3\\Omega ,R_{3} = R_{4} = R_{7} = R_{9} =R_{11} =6\\Omega ,R_{8} = R_{10} =18\\Omega$。试求节点⑤、⑥之间的输入电阻。",
+        "golden_answer": {
+            "$R_{56}$": "$2\\Omega$"
+        },
+        "solution": "题图2-23所示节点⑤、⑥之间看入，左、右各有一平衡电桥，因此$R_{2}$、$R_{5}$可看作开路，所以输入电阻为$$\\begin{aligned}R_{56} & =\\left(R_{1}+R_{3}\\right) / /\\left(R_{7}+R_{8}\\right) / / R_{9} / /\\left(R_{10}+R_{11}\\right) / /\\left(R_{4}+R_{6}\\right) \\\\& =(2+6) / /(6+18) / / 6 / /(18+6) / /(6+2) \\\\& =2 \\Omega\\end{aligned}$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-24",
+        "question": "求题图2-24所示电路中的电流i。",
+        "golden_answer": {
+            "i": "$5.33A$"
+        },
+        "solution": "由对称性可知，题图2-24(a)中a、b两点等电位，可视为短路，可作等效变换如图。\n由等效电路可得$$i=\\frac{10}{1+0.5+0.5 / /(0.5+1)}=\\frac{10}{1.875}=5.33 \\mathrm{A}$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-25",
+        "question": "题图2-25所示电路中，已知$R_{1} = R_{3} = R_{5} = R_{7} = 2\\Omega ,R_{2} = R_{4} = R_{6} = 20\\Omega$。如果$I_{7} = 1A$，试求：（3）电源电压$U_{S}$。\n利用上述结果，推算$U_{S} = 100V$，电流$I_{7}$的值。",
+        "golden_answer": {
+            "$U_{S}$": "$10.1V$",
+            "$I_{7}$": "$9.88A$"
+        },
+        "solution": "参考方向如题图2-25(a)所示。\n$I_{7} = 1A$即$R_{7}$中的电流，根据电阻的串并联关系递推分别得到：$$\\begin{array}{l}U_{R 6}=R_{7} I_{7}=2 \\times 1=2 \\mathrm{V} \\\\I_{R 5}=\\frac{U_{R 6}}{R_{6}}+I_{R 7}=\\frac{2}{20}+1=1.1 \\mathrm{A} \\\\U_{R 4}=R_{5} I_{R 5}+U_{R 6}=2 \\times 1.1+2=4.2 \\mathrm{V} \\\\I_{R 3}=\\frac{U_{R 4}}{R_{4}}+I_{R 5}=\\frac{4.2}{20}+1.1=1.31 \\mathrm{A} \\\\U_{R 2}=R_{3} I_{R 3}+U_{R 4}=2 \\times 1.31+4.2=6.82 \\mathrm{V} \\\\I_{R 1}=\\frac{U_{R 2}}{R_{2}}+I_{R 3}=\\frac{6.82}{20}+1.31=1.651 \\mathrm{A} \\\\U_{\\mathrm{S}}=R_{1} I_{R 1}+U_{R 2}=2 \\times 1.651+6.82=10.122 \\mathrm{V}\\end{array}$$当$U_{S} = 100V$，可以推算出：$$I_{7}=\\frac{100}{10.122} \\times 1=9.88 \\mathrm{A}$$",
+        "is_forward": true
+    },
+    {
+        "id": "2-27",
+        "question": "题图2-27所示电路由许多单元构成，每个单元包含$R_{1}$和$R_{2}$两个电阻。设单元数很多，视作无穷大。\n（1）设$R_{1} = 2\\Omega ,R_{2} = 1\\Omega$，求A，B处的入端电阻；",
+        "golden_answer": {
+            "$R_{AB}$": "$2.73\\Omega$"
+        },
+        "solution": "设入端电阻为$R_{AB}$，因单元数视作无穷大，所以从题图2-27(a)A′、B′看入入端电阻也是$R_{AB}$，由此有题图2-27(b)所示的等效电路。\n由题图2-27(b)可得$$R_{\\mathrm{AB}}=R_{1}+\\frac{R_{2} R_{\\mathrm{AB}}}{R_{2}+R_{\\mathrm{AB}}}$$整理得$$R_{\\mathrm{AB}}^{2}-R_{1} R_{\\mathrm{AB}}-R_{1} R_{2}=0$$代入参数有$$R_{\\mathrm{AB}}^{2}-2 R_{\\mathrm{AB}}-2=0$$解得$$R_{\\mathrm{AB}}=\\frac{2 \\pm \\sqrt{4+8}}{2}=1 \\pm \\sqrt{3}$$舍去负值。所以$R_{\\mathrm{AB}}=1+\\sqrt{3}=2.73 \\Omega$。",
+        "is_forward": true
+    },
+    {
+        "id": "3-1",
+        "question": "试用支路电流法求题图3-1所示电路中各支路电流。",
+        "golden_answer": {
+            "$I_{1}$": "$-2A$",
+            "$I_{2}$": "$-0.5A$",
+            "$I_{3}$": "$-1.5A$"
+        },
+        "solution": "各支路电流如题图3-1(a)所示。\n支路电流方程如下：$$\\left\\{\\begin{array}{l}-I_{1}+I_{2}+I_{3}=0 \\\\3 I_{1}+2 I_{3}=-9 \\\\30 I_{2}-2 I_{3}=-12\\end{array}\\right.$$解得$I_{1}=-2 \\mathrm{A}, \\quad I_{2}=-0.5 \\mathrm{A}, \\quad I_{3}=-1.5 \\mathrm{A}$。",
+        "is_forward": true
+    },
+    {
+        "id": "3-3",
+        "question": "试用支路电流法求题图3-3所示电路中的各支路电流。",
+        "golden_answer": {
+            "$I_{1}$": "$-3.64A$",
+            "$I_{2}$": "$1.13A$",
+            "$I_{3}$": "$2.51A$",
+            "$I_{4}$": "$2.68A$",
+            "$I_{5}$": "$-1.55A$",
+            "$I_{6}$": "$-0.956A$"
+        },
+        "solution": "各支路电流如题图3-3(a)所示。\n求解支路电流所需的方程组为$$\\left\\{\\begin{array}{l}I_{1}+I_{2}+I_{3}=0 \\\\-I_{2}+I_{4}+I_{5}=0 \\\\-I_{1}-I_{4}+I_{5}=0 \\\\2 I_{1}-10 I_{2}-8 I_{4}=-40 \\\\10 I_{2}-10 I_{3}+4 I_{5}=-20 \\\\8 I_{4}-4 I_{5}+8 I_{6}=20\\end{array}\\right.$$解得$$\\left\\{\\begin{array}{l}I_{1}=-3.64 \\mathrm{A} \\\\I_{2}=1.13 \\mathrm{A} \\\\I_{3}=2.51 \\mathrm{A} \\\\I_{4}=2.68 \\mathrm{A} \\\\I_{5}=-1.55 \\mathrm{A} \\\\I_{6}=-0.956 \\mathrm{A}\\end{array}\\right.$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-4",
+        "question": "题图3-4电路中，已知电压源电压$U_{\\mathrm{S} 1}=12 \\mathrm{V}, \\quad U_{\\mathrm{S} 2}=8 \\mathrm{V}$，内阻$R_{\\mathrm{S} 1}=4 \\Omega, R_{\\mathrm{S} 2}=4 \\Omega$；电阻$R_{1}=20 \\Omega, R_{2}=40 \\Omega, R_{3}=28 \\Omega, R_{4}=8 \\Omega, R_{5}=16 \\Omega$。试用回路电流法求各支路电流。",
+        "golden_answer": {
+            "$I_{1}$": "$0.4A$",
+            "$I_{2}$": "$0.2A$",
+            "$I_{3}$": "$0.1A$",
+            "$I_{4}$": "$0.3A$",
+            "$I_{5}$": "$-0.1A$",
+            "$I_{6}$": "$0.2A$"
+        },
+        "solution": "回路电流参考方向如题图3-4(a)所示。\n回路电流方程如下：$$\\left\\{\\begin{array}{l}\\left(R_{1}+R_{\\mathrm{S} 1}+R_{4}\\right) I_{l 1}-R_{4} I_{l 3}=U_{\\mathrm{S} 1} \\\\\\left(R_{\\mathrm{S} 2}+R_{3}+R_{5}\\right) I_{l 2}-R_{5} I_{l 3}=U_{\\mathrm{S} 2} \\\\\\left(R_{2}+R_{4}+R_{5}\\right) I_{l 3}-R_{4} I_{l 1}-R_{5} I_{l 2}=0\\end{array}\\right.$$代入参数得$$\\left\\{\\begin{array}{l}8 I_{l 1}-2 I_{l 3}=3 \\\\6 I_{l 2}-2 I_{l 3}=1 \\\\8 I_{l 3}-I_{l 1}-2 I_{l 2}=0\\end{array}\\right.$$解得$I_{l 1}=0.4 \\mathrm{A}, \\quad I_{l 2}=0.2 \\mathrm{A}, \\quad I_{l 3}=0.1 \\mathrm{A}$。则各支路电流为$$\\left\\{\\begin{array}{l}I_{1}=I_{l 1}=0.4 \\mathrm{A} \\\\I_{2}=I_{l 2}=0.2 \\mathrm{A} \\\\I_{3}=I_{l 3}=0.1 \\mathrm{A} \\\\I_{4}=I_{l 1}-I_{l 3}=0.3 \\mathrm{A} \\\\I_{5}=I_{l 3}-I_{l 2}=-0.1 \\mathrm{A} \\\\I_{6}=I_{l 1}-I_{l 2}=0.2 \\mathrm{A}\\end{array}\\right.$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-6",
+        "question": "试用回路电流法求题图3-6所示电路中电流源两端电压$U_{S}$。",
+        "golden_answer": {
+            "$U_{S}$": "$8V$"
+        },
+        "solution": "回路电流方向如题图3-6(a)所示。\n回路电流方程如下：$$\\left\\{\\begin{array}{l}4 I_{l 1}-2 I_{l 2}=8 \\\\I_{l 2}+U_{\\mathrm{s}}=4 \\\\-2 I_{l 1}+3 I_{l 3}-U_{\\mathrm{s}}=0 \\\\I_{l 2}-I_{l 3}=-10\\end{array}\\right.$$解得$I_{l 1}=5 \\mathrm{A}, \\quad I_{l 2}=-4 \\mathrm{A}, \\quad I_{l 3}=6 \\mathrm{A}, \\quad U_{\\mathrm{S}}=8 \\mathrm{V}$。",
+        "is_forward": true
+    },
+    {
+        "id": "3-9",
+        "question": "用回路电流法求题图3-9所示电路中的电压U。",
+        "golden_answer": {
+            "U": "$8V$"
+        },
+        "solution": "假设网孔电流分别为$I_{1}$，$I_{2}$，$I_{3}$，$I_{4}$，如题图3-9(a)所示。\n方程为$$\\left\\{\\begin{array}{l}I_{1}=2 \\\\-6 I_{1}+18 I_{2}-4 I_{3}-6 I_{4}=0 \\\\I_{3}=-3 \\\\-6 I_{2}-3 I_{3}+9 I_{4}=-12\\end{array}\\right.$$整理得$$\\left\\{\\begin{array}{l}18 I_{2}-4 I_{3}=-6 \\\\-6 I_{2}-3 I_{3}=15\\end{array}\\right.$$解得$I_{1}=2 \\mathrm{A}, I_{2}=-1 \\mathrm{A}, I_{3}=-3 \\mathrm{A}, I_{4}=-3 \\mathrm{A}$。电压$U=4\\left(I_{2}-I_{3}\\right)=8 \\mathrm{V}$\n* 本题也可以将2A和$6\\Omega$进行电源等效变换后再按3个回路求。",
+        "is_forward": true
+    },
+    {
+        "id": "3-10",
+        "question": "用回路电流法求题图3-10所示电路中的电流I。",
+        "golden_answer": {
+            "I": "$14mA$"
+        },
+        "solution": "参考方向如题图3-10(a)所示。\n回路电流方程如下：$$\\left\\{\\begin{array}{l}I_{l 1}=10 \\times 10^{-3} \\\\I_{l 2}=-3 \\times 10^{-3} \\\\I_{l 3}=-5 \\times 10^{-3} \\\\\\left(4 \\times 10^{3}+4 \\times 10^{3}\\right) I_{l 4}+4 \\times 10^{3} I_{l 2}-4 \\times 10^{3} I_{l 3}=25 \\\\\\left(2 \\times 10^{3}+3 \\times 10^{3}\\right) I_{l 5}-2 \\times 10^{3} I_{l 1}-3 \\times 10^{3} I_{l 3}=-25\\end{array}\\right.$$解得$$\\left\\{\\begin{array}{l}I_{l 1}=10 \\times 10^{-3} \\\\I_{l 2}=-3 \\times 10^{-3} \\\\I_{l 3}=-5 \\times 10^{-3} \\\\I_{l 4}=2.125 \\mathrm{mA} \\\\I_{l 5}=-4 \\mathrm{mA}\\end{array}\\right.$$所以$I=I_{l 1}-I_{l 5}=14 \\mathrm{mA}$。",
+        "is_forward": true
+    },
+    {
+        "id": "3-11",
+        "question": "用回路电流法求题图3-11所示电路中电流$I_{3}$和电流源两端电压$U_{S1}$和$U_{S2}$。",
+        "golden_answer": {
+            "$I_{3}$": "$8A$",
+            "$U_{S1}$": "$-48V$",
+            "$U_{S2}$": "$-24V$"
+        },
+        "solution": "回路选取如题图3-11(a)所示。\n列写方程如下：$$\\left\\{\\begin{array}{l}4 I_{l 1}-I_{l 2}-3 I_{l 3}-U_{\\mathrm{S} 2}=0 \\\\-I_{l 1}+I_{l 2}-6 I_{3}-U_{\\mathrm{S} 1}=0 \\\\-3 I_{l 1}+7 I_{l 3}+U_{\\mathrm{S} 1}=0 \\\\I_{l 1}=-2 \\\\I_{l 3}-I_{l 2}=8 \\\\I_{3}=I_{l 3}-I_{l 1}\\end{array}\\right.$$解得$$\\left\\{\\begin{array}{l}I_{l 1}=-2 \\mathrm{A} \\\\I_{l 2}=-2 \\mathrm{A} \\\\I_{l 3}=6 \\mathrm{A} \\\\U_{\\mathrm{S} 1}=-48 \\mathrm{V} \\\\U_{\\mathrm{S} 2}=-24 \\mathrm{V}\\end{array}\\right.$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-14",
+        "question": "试用回路电流法求题图3-14所示电路中的电压U。",
+        "golden_answer": {
+            "U": "$-8V$"
+        },
+        "solution": "回路选取如题图3-14(a)所示。\n所需方程如下：$$\\left\\{\\begin{array}{l}6 I_{l 1}-2 I_{l 2}-2 I_{l 4}=-16 \\\\I_{l 2}=5 \\\\I_{l 3}=0.75 U \\\\-2 I_{l 1}+6 I_{l 2}-6 I_{l 3}+8 I_{l 4}-8 I=16 \\\\I=-I_{l 1}+I_{l 2}+I_{l 4} \\\\U=2\\left(I_{l 3}-I_{l 4}\\right)\\end{array}\\right.$$解得$I_{l 1}=-\\frac{5}{3} \\mathrm{A}, \\quad I_{l 2}=5 \\mathrm{A}, \\quad I_{l 3}=-6 \\mathrm{A}, \\quad I_{l 4}=-2 \\mathrm{A}, \\quad U=-8 \\mathrm{V}$。",
+        "is_forward": true
+    },
+    {
+        "id": "3-15",
+        "question": "试用回路电流法求题图3-15所示电路中1A电流源发出的功率。",
+        "golden_answer": {
+            "P": "$33.3W$"
+        },
+        "solution": "设回路电流$I_{1}$，$I_{2}$，$I_{3}$。$$\\left\\{\\begin{array}{l}100 I_{1}-20 I_{2}-30 I_{3}=0 \\\\I_{2}=1 \\\\I_{3}=-0.02 U\\end{array}\\right.$$补充控制量与回路电流的关系：$$U=20\\left(I_{2}-I_{1}\\right)+0.4 U \\Rightarrow U=\\frac{100}{3}\\left(I_{2}-I_{1}\\right)$$整理得$$\\left\\{\\begin{array}{c}10 I_{1}-3 I_{3}=2 \\\\-2 I_{1}+3 I_{3}=-2\\end{array}\\right.$$解得$I_{1}=0, \\quad I_{3}=-0.667 \\mathrm{A}$。由此可得$U=33.3V$。1A电流源发出的功率为$$P_{\\text {发 }}=U I_{\\mathrm{S}}=33.3 \\times 1=33.3 \\mathrm{W}$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-16",
+        "question": "题图3-16所示电路中，已知$U_{\\mathrm{S}}=40 \\mathrm{V}, R_{1}=10 \\Omega, R_{2}=5 \\Omega, R_{3}=10 \\Omega, R_{4}=5 \\Omega$。试求各支路电流及两个受控源发出的功率。",
+        "golden_answer": {
+            "$I_{1}$": "$3A$",
+            "$I_{2}$": "$4A$",
+            "$I_{3}$": "$-1A$",
+            "$I_{4}$": "$4A$",
+            "$P_{1}$": "$150W$",
+            "$P_{2}$": "$-10W$"
+        },
+        "solution": "用回路法。回路如题图3-16(a)所示。\n列方程如下：$$\\left\\{\\begin{array}{l}25 I_{l 1}-5 I_{l 2}-10 I_{l 4}=40 \\\\I_{l 2}=0.1 U_{3} \\\\-10 I_{l 1}+15 I_{l 3}-10 I_{1}=0 \\\\U_{3}=10\\left(I_{l 1}-I_{l 3}\\right) \\\\I_{1}=I_{l 1}\\end{array}\\right.$$解得$I_{l 1}=3 \\mathrm{A}, \\quad I_{l 2}=-1 \\mathrm{A}, \\quad I_{l 3}=4 \\mathrm{A}$。则各支路电流分别为$$I_{1}=I_{l 1}=3 \\mathrm{A}, \\quad I_{2}=I_{l 1}-I_{l 2}=4 \\mathrm{A}, \\quad I_{3}=I_{l 1}-I_{l 3}=-1 \\mathrm{A}, \\quad I_{4}=I_{l 3}=4 \\mathrm{A}$$流控电压源发出的功率为$$P_{1 \\text { 发 }}=10 I_{1} \\times\\left(I_{2}-I_{3}\\right)=30 \\times 5=150 \\mathrm{W}$$压控电流源发出的功率为$$P_{2 \\text { 发 }}=\\left(10 I_{1}-5 I_{2}\\right) \\times 0.1 U_{3}=10 \\times(-1)=-10 \\mathrm{W}$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-18",
+        "question": "用回路电流法求题图3-18所示电路中各电源输出的功率，并核对电源输出的功率是否与电阻消耗的功率相等。",
+        "golden_answer": {
+            "$P_{1 \\text {发 }}$": "$1.84kW$",
+            "$P_{2 \\text {发 }}$": "$-64.5W$",
+            "$P_{3 \\text {发 }}$": "$-48.3W$",
+            "$P_{4 \\text {发 }}$": "$246W$"
+        },
+        "solution": "参考方向如题图 3-18(a)所示。\n回路电流方程为$$\\left\\{\\begin{array}{l}I_{l 1}=3.5 \\\\-120 I_{l 1}+315 I_{l 2}-45 I_{l 3}=-100 \\\\-45 I_{l 2}+155 I_{l 3}=-205\\end{array}\\right.$$解得$I_{l 1}=3.5 \\mathrm{A}, \\quad I_{l 2}=0.8627 \\mathrm{A}, \\quad I_{l 3}=-1.072 \\mathrm{A}$。所以有$$\\begin{array}{l}U=60 \\times I_{l 1}+120\\left(I_{l 1}-I_{l 2}\\right)=526.5 \\mathrm{V} \\\\I_{1}=-I_{l 2}=-0.8627 \\mathrm{A} \\\\I_{2}=I_{l 3}-I_{l 2}=-1.935 \\mathrm{A} \\\\I_{3}=-I_{l 3}=1.072 \\mathrm{A}\\end{array}$$3.5A电流源、75V电压源、25V电压源和230V电压源输出的功率分别为$$\\begin{array}{l}P_{1 \\text {发 }}=U \\times 3.5=526.5 \\times 3.5=1.84 \\mathrm{kW} \\\\P_{2 \\text {发 }}=75 \\times I_{1}=75 \\times(-0.8627)=-64.7 \\mathrm{W} \\\\P_{3 \\text {发 }}=25 \\times I_{2}=25 \\times(-1.935)=-48.4 \\mathrm{W} \\\\P_{4 \\text {发 }}=230 \\times I_{3}=230 \\times 1.072=247 \\mathrm{W} \\\\\\end{array}$$所有独立电源输出功率为$$P_{\\text {发 }}=P_{1 \\text {发 }}+P_{2 \\text {发 }}+P_{3 \\text {发 }}+P_{4 \\text {发 }}=1.97 \\mathrm{kW}$$各电阻吸收的功率总和为$$\\begin{aligned}P_{\\text {吸 }} & =60 \\times 3.5^{2}+120 \\times(3.50-0.8627)^{2}+150 \\times 0.8627^{2}+45 \\times 1.935^{2}+110 \\times 1.072^{2} \\\\& =1.98 \\mathrm{kW}\\end{aligned}$$可见，$P_{\\text {发 }}\\approx P_{\\text {吸 }}$，差别是由误差引起。",
+        "is_forward": true
+    },
+    {
+        "id": "3-21",
+        "question": "试用节点电压法求电流源两端电压U和各支路电流。",
+        "golden_answer": {
+            "U": "$19.8V$",
+            "$I_{1}$": "$0.68A$",
+            "$I_{2}$": "$0.04A$",
+            "$I_{3}$": "$0.36A$"
+        },
+        "solution": "节点如题图3-21(a)所示。\n节点方程为$$\\left(\\frac{1}{13.7}+\\frac{1}{17.2}+\\frac{1}{11.9}\\right) U_{\\mathrm{n}}=\\frac{5}{13.7}+\\frac{15}{17.2}+\\frac{10}{11.9}+1$$整理得$0.2152U_{n} = 3.077$，解得$U_{n} = 14.30V$。则电压U为$$U=U_{\\mathrm{n}}+5.5 \\times 1=19.8 \\mathrm{V}$$各电流分别为$$\\begin{array}{l}I_{1}=\\frac{U_{\\mathrm{n}}-5}{13.7}=0.679 \\mathrm{A} \\\\I_{2}=\\frac{U_{\\mathrm{n}}-15}{13.7}=-0.0407 \\mathrm{A} \\\\I_{3}=\\frac{U_{\\mathrm{n}}-10}{11.9}=0.361 \\mathrm{A}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-22",
+        "question": "试用节点电压法求题图3-22所示电路中的电流$I_{1}$，$I_{2}$。",
+        "golden_answer": {
+            "$I_{1}$": "$10A$",
+            "$I_{2}$": "$10A$"
+        },
+        "solution": "节点如题图3-22(a)所示。\n列写图中超节点方程，有$$-15+\\frac{U_{\\mathrm{n} 1}}{1}+\\frac{U_{\\mathrm{n} 1}-5}{0.5}-5=0$$解得$U_{n1} = 10V$。则$U_{n2} = 5V$，电路中的电流$$I_{1}=\\frac{U_{\\mathrm{n} 1}}{1}=10 \\mathrm{A}, \\quad I_{2}=\\frac{U_{\\mathrm{n} 2}}{0.5}=10 \\mathrm{A}$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-23",
+        "question": "题图3-23所示电路中，已知$U_{\\mathrm{S}}=10 \\mathrm{V}, I_{\\mathrm{S}}=1 \\mathrm{A}, R_{1}=10 \\Omega, R_{2}=1 \\Omega, R_{3}=3 \\Omega, R_{4}=2 \\Omega, R_{5}=5 \\Omega$。试求电阻$R_{3}$中的电流。",
+        "golden_answer": {
+            "$I_{R3}$": "$2.1A$"
+        },
+        "solution": "各节点和节点电压如题图3-23(a)所示。\n列写节点电压方程如下：$$\\left\\{\\begin{array}{l}U_{\\mathrm{n} 1}=10 \\\\-\\frac{1}{1} U_{\\mathrm{n} 1}+\\left(\\frac{1}{1}+\\frac{1}{3}+\\frac{1}{2}\\right) U_{\\mathrm{n} 2}-\\frac{1}{2} U_{\\mathrm{n} 3}=0 \\\\-\\frac{1}{2} U_{\\mathrm{n} 2}+\\left(\\frac{1}{2}+\\frac{1}{5}\\right) U_{\\mathrm{n} 3}=-1\\end{array}\\right.$$解得$U_{\\mathrm{n} 1}=10 \\mathrm{V}, \\quad U_{\\mathrm{n} 2}=6.325 \\mathrm{V}, U_{\\mathrm{n} 3}=4.661 \\mathrm{V}$。则电阻$R_{3}$中的电流$$I_{R 3}=\\frac{U_{\\mathrm{n} 2}}{R_{3}}=\\frac{6.325}{3}=2.11 \\mathrm{A}$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-25",
+        "question": "题图3-25所示电路中，已知$U_{\\mathrm{S} 1}=50 \\mathrm{V}, \\quad U_{\\mathrm{S} 2}=5 \\mathrm{V}, \\quad I_{\\mathrm{S} 1}=1 \\mathrm{A}, \\quad I_{\\mathrm{S} 2}=2 \\mathrm{A}$。试求各电源发出的功率。",
+        "golden_answer": {
+            "$P_{I 1 \\text { 发 }}$": "$49W$",
+            "$P_{U 1 \\text { 发 }}$": "$150W$",
+            "$P_{I 2 \\text { 发 }}$": "$86W$",
+            "$P_{U 2 \\text { 发 }}$": "$-30W$"
+        },
+        "solution": "用节点法。各节点和电压、电流参考方向如题图3-25(a)所示。\n列写节点电压方程如下：$$\\left\\{\\begin{array}{l}\\left(\\frac{1}{1}+\\frac{1}{3}\\right) U_{\\mathrm{n} 1}-\\frac{1}{3} U_{\\mathrm{n} 2}=1+\\frac{50}{1} \\\\-\\frac{1}{3} U_{\\mathrm{n} 1}+\\left(\\frac{1}{3}+\\frac{1}{5}\\right) U_{\\mathrm{n} 2}=2+\\frac{5}{5}\\end{array}\\right.$$整理得$$\\left\\{\\begin{array}{l}4 U_{\\mathrm{n} 1}-U_{\\mathrm{n} 2}=153 \\\\-5 U_{\\mathrm{n} 1}+8 U_{\\mathrm{n} 2}=45\\end{array}\\right.$$解得$$\\begin{array}{c}U_{\\mathrm{n} 1}=\\frac{\\left|\\begin{array}{cc}153 & -1 \\\\45 & 8\\end{array}\\right|}{\\left|\\begin{array}{cc}4 & -1 \\\\-5 & 8\\end{array}\\right|}=\\frac{1269}{27}=47 \\mathrm{V} \\\\U_{\\mathrm{n} 2}=\\frac{\\left|\\begin{array}{cc}4 & 153 \\\\-5 & 45\\end{array}\\right|}{\\left|\\begin{array}{cc}4 & -1 \\\\-5 & 8\\end{array}\\right|}=\\frac{945}{27}=35 \\mathrm{V}\\end{array}$$则$$\\begin{array}{l}U_{1}=2 \\times 1+U_{\\mathrm{n} 1}=49 \\mathrm{V} \\\\U_{2}=U_{\\mathrm{n} 2}+4 \\times 2=43 \\mathrm{V} \\\\I_{1}=\\frac{U_{\\mathrm{S} 1}-U_{\\mathrm{n} 1}}{1}=3 \\mathrm{A} \\\\I_{2}=\\frac{U_{\\mathrm{S} 2}-U_{\\mathrm{n} 2}}{5}=-6 \\mathrm{A}\\end{array}$$所以，电源$I_{S1}$、$I_{S2}$、$U_{S1}$和$U_{S2}$发出的功率分别为$$\\begin{array}{l}P_{I 1 \\text { 发 }}=U_{1} I_{\\mathrm{S} 1}=49 \\times 1=49 \\mathrm{W} \\\\P_{I 2 \\text { 发 }}=U_{2} I_{\\mathrm{S} 2}=43 \\times 2=86 \\mathrm{W} \\\\P_{U 1 \\text { 发 }}=U_{\\mathrm{S} 1} I_{1}=50 \\times 3=150 \\mathrm{W} \\\\P_{U 2 \\text { 发 }}=U_{\\mathrm{S} 2} I_{1}=5 \\times(-6)=-30 \\mathrm{W}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-27",
+        "question": "求题图3-27所示电路中各支路电流。",
+        "golden_answer": {
+            "$I_{1}$": "$0.473A$",
+            "$I_{2}$": "$0.103A$",
+            "$I_{3}$": "$0.370A$",
+            "$I_{4}$": "$-0.602A$",
+            "$I_{5}$": "$0.232A$",
+            "$I_{6}$": "$1A$",
+            "$I_{7}$": "$0.768A$"
+        },
+        "solution": "各节点及电压、电流参考方向如题图3-27(a)所示。\n列写节点电压方程如下：$$\\left\\{\\begin{array}{l}\\frac{1}{160} U_{\\mathrm{n} 1}-\\frac{1}{160} U_{\\mathrm{n} 4}+\\frac{1}{93} U_{\\mathrm{n} 2}+\\left(\\frac{1}{48}+\\frac{1}{110}\\right) U_{\\mathrm{n} 3}=\\frac{57}{48} \\\\U_{\\mathrm{n} 4}=50 \\\\U_{\\mathrm{n} 2}=U_{\\mathrm{n} 1}-143 \\\\U_{\\mathrm{n} 3}=U_{\\mathrm{n} 2}+108\\end{array}\\right.$$解得$U_{\\mathrm{n} 1}=87.06 \\mathrm{V}, U_{\\mathrm{n} 2}=-55.94 \\mathrm{V}, U_{\\mathrm{n} 3}=52.06 \\mathrm{V}, U_{\\mathrm{n} 4}=50 \\mathrm{V}$。则各支路电流为$$\\begin{array}{l}I_{1}=\\frac{U_{\\mathrm{n} 3}}{110}=0.473 \\mathrm{A} \\\\I_{2}=\\frac{57-U_{\\mathrm{n} 3}}{48}=0.103 \\mathrm{A} \\\\I_{3}=I_{1}-I_{2}=0.370 \\mathrm{A} \\\\I_{4}=\\frac{U_{\\mathrm{n} 2}}{93}=-0.602 \\mathrm{A} \\\\I_{5}=\\frac{U_{\\mathrm{n} 1}-U_{\\mathrm{n} 4}}{160}=0.232 \\mathrm{A} \\\\I_{6}=\\frac{50}{50}=1 \\mathrm{A} \\\\I_{7}=I_{6}-I_{5}=0.768 \\mathrm{A}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-29",
+        "question": "已知题图3-29所示电路中，$R_{1}=R_{3}=2 \\Omega, \\quad R_{2}=R_{4}=1 \\Omega, \\quad U_{\\mathrm{S} 1}=3 \\mathrm{V}, \\quad I_{\\mathrm{S} 2}=1 \\mathrm{A}$。分别用回路电流法、节点电压法求解各支路电流。",
+        "golden_answer": {
+            "$I_{1}$": "$0.8A$",
+            "$I_{2}$": "$1.8A$",
+            "$I_{3}$": "$2.2A$",
+            "$I_{4}$": "$0.4A$",
+            "$I_{5}$": "$1A$"
+        },
+        "solution": "回路和节点的选取如题图3-29(a)所示。\n（1）回路法。$$\\left\\{\\begin{array}{l}I_{l 1}=-1 \\\\2 I_{l 1}+4 I_{l 2}-I_{l 3}=3 \\\\-I_{l 2}+3 I_{l 3}-3 U_{1}=0 \\\\U_{1}=2\\left(I_{l 1}+I_{l 2}\\right)\\end{array}\\right.$$解得$I_{l 1}=-1 \\mathrm{A}, \\quad I_{l 2}=1.8 \\mathrm{A}, \\quad I_{l 3}=2.2 \\mathrm{A}$。则各支路电流为$$\\begin{array}{l}I_{1}=I_{l 1}+I_{l 2}=0.8 \\mathrm{A} \\\\I_{2}=I_{l 2}=1.8 \\mathrm{A} \\\\I_{3}=I_{l 3}=2.2 \\mathrm{A} \\\\I_{4}=I_{l 2}-I_{l 3}=-0.4 \\mathrm{A}\\end{array}$$（2）节点法。$$\\left\\{\\begin{array}{l}\\left(\\frac{1}{2}+\\frac{1}{1}\\right) U_{\\mathrm{n} 1}-\\frac{1}{1} U_{\\mathrm{n} 2}=\\frac{3}{2}+1 \\\\-\\frac{1}{1} U_{\\mathrm{n} 1}+\\left(\\frac{1}{1}+\\frac{1}{2}+\\frac{1}{1}\\right) U_{\\mathrm{n} 2}=-\\frac{3 U_{1}}{2} \\\\U_{1}=3-U_{\\mathrm{n} 1}\\end{array}\\right.$$解得$U_{\\mathrm{n} 1}=1.4 \\mathrm{V}, \\quad U_{\\mathrm{n} 2}=-0.4 \\mathrm{V}, \\quad U_{1}=1.6 \\mathrm{V}$。则各支路电流为$$\\begin{array}{l}I_{1}=\\frac{U_{\\mathrm{S} 1}-U_{\\mathrm{n} 1}}{2}=0.8 \\mathrm{A} \\\\I_{2}=\\frac{U_{\\mathrm{n} 1}-U_{\\mathrm{n} 2}}{R_{2}}=1.8 \\mathrm{A} \\\\I_{3}=\\frac{U_{\\mathrm{n} 2}+3 U_{1}}{R_{3}}=2.2 \\mathrm{A} \\\\I_{4}=\\frac{U_{\\mathrm{n} 2}}{R_{4}}=-0.4 \\mathrm{A}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "3-30",
+        "question": "列写题图3-30所示电路的节点电压方程式，并求出电流I。",
+        "golden_answer": {
+            "I": "$-6A$"
+        },
+        "solution": "节点编号如题图3-30(a)所示。\n列节点方程如下：$$\\left\\{\\begin{array}{l}\\left(\\frac{1}{6}+\\frac{1}{2}\\right) U_{\\mathrm{n} 1}=2 I-9 \\\\\\left(\\frac{1}{10}+\\frac{1}{5}\\right) U_{\\mathrm{n} 2}=9 \\\\I=-\\frac{1}{5} U_{\\mathrm{n} 2}\\end{array}\\right.$$解得$U_{\\mathrm{n} 1}=-31.5 \\mathrm{V}, \\quad U_{\\mathrm{n} 2}=30 \\mathrm{V}, \\quad I=-6 \\mathrm{A}$。",
+        "is_forward": true
+    },
+    {
+        "id": "3-31",
+        "question": "试用节点电压法求题图所示电路中的各支路电流。",
+        "golden_answer": {
+            "$I_{1}$": "$-2A$",
+            "$I_{2}$": "$8A$",
+            "$I_{3}$": "$6A$",
+            "$I_{4}$": "$5A$",
+            "$I_{5}$": "$1A$",
+            "$I_{6}$": "$9A$"
+        },
+        "solution": "各节点和电压、电流参考方向如题图3-31(a)所示。\n列方程如下：$$\\left\\{\\begin{array}{l}5 U_{\\mathrm{n} 1}-2 U_{\\mathrm{n} 2}-2 U_{\\mathrm{n} 3}=12 \\\\U_{\\mathrm{n} 2}=-5 \\\\-2 U_{\\mathrm{n} 1}-U_{\\mathrm{n} 2}+3 U_{\\mathrm{n} 3}=-3 U \\\\U=U_{\\mathrm{n} 1}-U_{\\mathrm{n} 2}\\end{array}\\right.$$整理得$$\\left\\{\\begin{array}{l}5 U_{\\mathrm{n} 1}-2 U_{\\mathrm{n} 3}=2 \\\\U_{\\mathrm{n} 1}+3 U_{\\mathrm{n} 3}=-20\\end{array}\\right.$$解得$U_{\\mathrm{n} 1}=-2 \\mathrm{V}, \\quad U_{\\mathrm{n} 3}=-6 \\mathrm{V}$。各支路电流为$$\\begin{array}{l}I_{1}=1 \\times U_{\\mathrm{n} 1}=-2 \\mathrm{A} \\\\I_{2}=2\\left(U_{\\mathrm{n} 1}-U_{\\mathrm{n} 3}\\right)=8 \\mathrm{A} \\\\I_{3}=2\\left(U_{\\mathrm{n} 1}-U_{\\mathrm{n} 2}\\right)=6 \\mathrm{A} \\\\I_{5}=1 \\times\\left(U_{\\mathrm{n} 2}-U_{\\mathrm{n} 3}\\right)=1 \\mathrm{A} \\\\I_{4}=I_{3}-I_{5}=5 \\mathrm{A} \\\\I_{6}=3 U=3\\left(U_{\\mathrm{n} 1}-U_{\\mathrm{n} 2}\\right)=9 \\mathrm{A}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-1",
+        "question": "电路如题图4-1所示。\n（2）以$2 \\Omega$电阻和电压源$U_{\\mathrm{S}}$串联代替$3 \\Omega$电阻, 若电路响应不变, 则$U_{\\mathrm{S}}$应为多大?",
+        "golden_answer": {
+            "$U_{\\mathrm{S}}$": "$2 \\mathrm{V}$"
+        },
+        "solution": "参考方向如题图 4-1(a)所示。\n以$2 \\Omega$电阻和电压源$U_{\\mathrm{S}}$串联代替$3 \\Omega$电阻, 如题图4-1(d)所示。若电路响应不变,则应有$$6=2 \\times 2+U_{\\mathrm{S}} \\text {, 即 } U_{\\mathrm{S}}=2 \\mathrm{V}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-7",
+        "question": "试用叠加定理求题图4-7所示电路中的电流$I_{x}$。",
+        "golden_answer": {
+            "$I_{x}$": "$0.5 \\mathrm{A}$"
+        },
+        "solution": "当$24V$电压源单独作用时, 可列方程如下:$$24=5 I_{x}^{\\prime}+3 I_{x}^{\\prime}+4 I_{x}^{\\prime}$$解得$I_{x}^{\\prime}=2 \\mathrm{A}$。\n当$6A$电流源单独作用时, 有$$-5 I_{x}^{\\prime \\prime}=3\\left(I_{x}^{\\prime \\prime}+6\\right)+4 I_{x}^{\\prime \\prime}$$解得$I_{x}^{\\prime \\prime}=-1.5 \\mathrm{A}$。\n所以$$I_{x}=I_{x}^{\\prime}+I_{x}^{\\prime \\prime}=2-1.5=0.5 \\mathrm{A}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-8",
+        "question": "用叠加定理求题图4-8所示电路中的电压U和电流I。",
+        "golden_answer": {
+            "$I$": "$3 \\mathrm{A}$",
+            "$U$": "$40 \\mathrm{V}$"
+        },
+        "solution": "当$12V$电压源单独作用时, 有$$I^{\\prime}=\\frac{12}{2}=6 \\mathrm{A}, U^{\\prime}=5 \\times 4 I^{\\prime}=120 \\mathrm{V}$$当$6V$电压源单独作用时, 有$$I^{\\prime \\prime}=-\\frac{6}{2}=-3 \\mathrm{A}, \\quad U^{\\prime \\prime}=5 \\times 4 I^{\\prime \\prime}=-60 \\mathrm{V}$$当$4A$电流源单独作用时, 有$$I^{\\prime \\prime \\prime}=0, \\quad U^{\\prime \\prime \\prime}=-5 \\times 4=-20 \\mathrm{V}$$所有独立电源共同作用时, 有$$\\begin{array}{c}I=I^{\\prime}+I^{\\prime \\prime}+I^{\\prime \\prime \\prime}=6-3+0=3 \\mathrm{A} \\\\U=U^{\\prime}+U^{\\prime \\prime}+U^{\\prime \\prime \\prime}=120-60-20=40 \\mathrm{V}\\end{array}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-12",
+        "question": "题图4-12所示电路为一直流电路, 电路参数如图所示。试用最简便的方法求出电流I的值。",
+        "golden_answer": {
+            "$I$": "$0.667 \\mathrm{A}$"
+        },
+        "solution": "该电路中有一平衡电桥, 所以左边的$2V$电压源和$1A$电流源对所求支路产生的电流分流为零。同样由电桥平衡条件, 可得$$I=\\frac{2}{2+(1+1) / /(1+1)}=\\frac{2}{3} \\mathrm{A}=0.667 \\mathrm{A}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-14",
+        "question": "题图4-14所示电路常用于控制电路中。已知$U_{1}=72 \\mathrm{V}$,$U_{2}=80 \\mathrm{V}$,$R_{1}=1.5 \\mathrm{k} \\Omega$,$R_{2}=3 \\mathrm{k} \\Omega$,$R_{3}=1.4 \\mathrm{k} \\Omega$,$R_{4}=2.6 \\mathrm{k} \\Omega$,$R=1.5 \\mathrm{k} \\Omega$。试用戴维南定理求出电阻R中的电流I。",
+        "golden_answer": {
+            "$I$": "$-1.17 \\mathrm{mA}$"
+        },
+        "solution": "利用戴维南定理, 从R支路看入的等效电路中, 开路电压为$$\\begin{aligned}U_{\\mathrm{oc}} & =\\frac{R_{2}}{R_{1}+R_{2}} U_{1}-\\frac{R_{4}}{R_{3}+R_{4}} U_{2} \\\\& =\\frac{3 \\times 10^{3}}{1.5 \\times 10^{3}+3 \\times 10^{3}} \\times 72-\\frac{2.6 \\times 10^{3}}{1.4 \\times 10^{3}+2.6 \\times 10^{3}} \\times 80=-4 \\mathrm{V}\\end{aligned}$$等效电阻为$$\\begin{aligned}R_{\\mathrm{in}} & =\\frac{R_{1} R_{2}}{R_{1}+R_{2}}+\\frac{R_{3} R_{4}}{R_{3}+R_{4}} \\\\& =\\frac{1.5 \\times 10^{3} \\times 3 \\times 10^{3}}{1.5 \\times 10^{3}+3 \\times 10^{3}}+\\frac{1.4 \\times 10^{3} \\times 2.6 \\times 10^{3}}{1.4 \\times 10^{3}+2.6 \\times 10^{3}}=1.91 \\mathrm{k} \\Omega\\end{aligned}$$等效电路入题图 4-14(a)所示。\n所以$$I=\\frac{U_{\\mathrm{oc}}}{R_{\\mathrm{in}}+R}=\\frac{-4}{1.91 \\times 10^{3}+1.5 \\times 10^{3}}=-1.17 \\mathrm{mA}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-18",
+        "question": "试用戴维南定理求题图4-18所示电路中$ab$支路的电流I和$ab$支路发出的功率。",
+        "golden_answer": {
+            "$I$": "$-0.5 \\mathrm{A}$",
+            "$P$": "$-20 \\mathrm{W}$"
+        },
+        "solution": "戴维南等效电路如题图4-18(a)所示。其中开路电压和等效电阻分别为$$\\begin{array}{l}U_{\\mathrm{oc}}=-20-20 \\times 2+10=-50 \\mathrm{V} \\\\R_{\\mathrm{i}}=20 \\Omega \\\\\\end{array}$$$ab$支路的电流为$$I=\\frac{U_{\\mathrm{oc}}+20}{R_{\\mathrm{i}}+40}=\\frac{-50+20}{20+40}=-0.5 \\mathrm{A}$$$ab$支路发出的功率为$$P=20 I-40 \\times I^{2}=-20 \\mathrm{W}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-20",
+        "question": "试用戴维南定理求解题图4-20所示电路中: (2)当$R_{4}=10 \\Omega$时, 求$I_{4}$;",
+        "golden_answer": {
+            "$I_{4}$": "$-25.0 \\mathrm{mA}$"
+        },
+        "solution": "由戴维南定理可知, 题图4-20所示电路的等效电路如题图4-20(a)所示。\n其中, 开路电压和入端阻抗分别为$$\\begin{aligned}U_{\\text {oc }} & =-2.1+\\frac{54}{54+27} \\times 2.1=-0.7 \\mathrm{V} \\\\R_{\\mathrm{i}} & =\\frac{54 \\times 27}{54+27}=18 \\Omega\\end{aligned}$$当$R_{4}=10 \\Omega$时, 可得$$I_{4}=\\frac{U_{\\mathrm{oc}}}{R_{\\mathrm{i}}+R_{4}}=\\frac{-0.7}{18+10}=-25.0 \\mathrm{mA}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-29",
+        "question": "求题图4-29所示电路中电阻$R_{\\mathrm{L}}$吸收的功率。",
+        "golden_answer": {
+            "$R_{\\mathrm{R L}}$": "$5 \\mathrm{~W}$"
+        },
+        "solution": "先将$5 \\Omega$电阻支路断开, 得题图4-29 (a), 求题图4-29 (a)的戴维南等效电路如题图4-29 (b)所示。\n由题图4-29 (a), 可得$U_{\\mathrm{oc}}=-6 I_{1}+3 I_{1}=-3 I_{1}=-3 \\times \\frac{9}{6+3}=-3 \\mathrm{~V}$\n用加压求流方法 (见题图4-29 (c)), 可得\n$$\\begin{array}{l}I_{1}=\\frac{2}{3} I \\\\3 I_{1}=6 I_{1}+U\\end{array}$$则$R_{\\mathrm{i}}=\\frac{U}{I}=-2 \\Omega$\n由题图4-29 (d)等效电路得$R_{\\mathrm{L}}$吸收的功率为$$P=R_{L} \\times\\left(\\frac{U_{\\mathrm{oc}}}{R_{i}+R_{L}}\\right)^{2}=5 \\times\\left(\\frac{-3}{-2+5}\\right)^{2}=5 \\mathrm{~W}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-31",
+        "question": "用戴维南定理求题图4-31所示电路中$5 \\Omega$电阻两端的电压。",
+        "golden_answer": {
+            "$U$": "$12 \\mathrm{~V}$"
+        },
+        "solution": "作局部电源等效变换, 并标参考方向如题图4-31(a)所示。\n由题图4-31(a)可分别有求从$5 \\Omega$电阻两端以左部分等效电路开路电压和等效电阻的电路分别如题图4-31(b)和题图4-31(c)所示\n。由题图4-31(b)所示电路可得$$4 I_{1}-2 I_{1}+6 I_{1}=32$$解得$I_{1}=4 \\mathrm{~A}$, 所以$$U_{\\text {oc }}=6 I_{1}=24 \\mathrm{~V}$$由题图4-31(c)所示电路可得$$I=I_{1}+\\frac{6 I_{1}-2 I_{1}}{4}$$整理得$I=2 I_{1}$, 所以$$U=2 I+6 I_{1}=2 I+6 \\times \\frac{I}{2}=5 I$$即等效电阻为$$R_{\\mathrm{eq}}=\\frac{U}{I}=5 \\Omega$$由此得等效电路如题图4-31(d) 所示。\n所以$$U=\\frac{5}{5+5} \\times 24=12 \\mathrm{~V}$$",
+        "is_forward": true
+    },
+    {
+        "id": "4-37",
+        "question": "题图4-37所示电路方框内为线性电阻网络。$aa'$处接有电压源$U_{\\mathrm{S}}$,$bb'$处接有电阻R。已知$U_{\\mathrm{S}}=8 \\mathrm{~V}$,$R=3 \\Omega$时,$I=0.5 \\mathrm{~A}$;$U_{\\mathrm{S}}=18 \\mathrm{~V}$,$R=4 \\Omega$时,$I=1 \\mathrm{~A}$。求$U_{\\mathrm{S}}=30 \\mathrm{~V}$,$R=5 \\Omega$时电流I的数值。",
+        "golden_answer": {
+            "$I$": "$1.5 \\mathrm{~A}$"
+        },
+        "solution": "解法1 应用戴维南定理, 题图4-37可等效为题图4-37(a)所示等效电路, 其中$U_{\\mathrm{oc}}$为$U_{\\mathrm{S}}=8 \\mathrm{~V}$时的开路电压。根据已知条件及齐性原理, 有$$\\left\\{\\begin{array}{l}\\frac{U_{o c}}{R_{\\mathrm{i}}+3}=0.5 \\\\\\frac{\\frac{18}{8} U_{\\mathrm{oc}}}{R_{\\mathrm{i}}+4}=1\\end{array}\\right.$$解得$U_{\\mathrm{oc}}=4 \\mathrm{~V}$,$R_{\\mathrm{i}}=5 \\Omega$。当$U_{\\mathrm{S}}=30 \\mathrm{~V}$,$R=5 \\Omega$时, 有$$I=\\frac{\\frac{30}{8} U_{o c}}{R_{\\mathrm{i}}+5}=1.5 \\mathrm{~A}$$解法2 根据替代定理, 将R支路替代为电压源, 可得如下各等效电路。\n根据齐性原理, 题图4-37(b)中电压源电压都增大2.25倍, 再与题图4-37(c)做减法, 得题图4-37(e); 类似, 题图4-37(b)中电压源电压都增大3.75倍, 再与题图4-37(d)做减法, 得题图4-37(f)。\n对题图4-37(e)、题图4-37(f)再利用齐性原理, 得$$\\frac{0.125}{-0.625}=\\frac{1.875-I}{5.625-5 I}$$解得$I=1.5 \\mathrm{~A}$。",
+        "is_forward": true
+    },
+    {
+        "id": "4-39",
+        "question": "利用互易定理求题图4-39所示电路中的电流I。",
+        "golden_answer": {
+            "$I$": "$0.333 \\mathrm{~A}$"
+        },
+        "solution": "当电路如题图4-39(a)所示时, 可分别求出$I_{1}$、$I_{2}$和$I_{3}$。$$\\begin{aligned}I_{1} & =\\frac{1}{3+6 / / 6+3+6 / / 6} \\times \\frac{6}{6+6}=\\frac{1}{24} \\mathrm{~A} \\\\I_{2} & =-\\frac{1}{24} \\mathrm{~A}, \\quad I_{3}=\\frac{1}{24} \\mathrm{~A}\\end{aligned}$$根据互易定理和叠加定理, 可求得题图4-39所示电路中的电流I为$$I=\\frac{2}{1} I_{1}+\\frac{3}{1} I_{2}+\\frac{9}{1} I_{3}=\\frac{1}{3} \\mathrm{~A}=0.333 \\mathrm{~A}$$",
+        "is_forward": true
+    }
+]
