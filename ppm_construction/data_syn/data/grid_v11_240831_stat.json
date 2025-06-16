@@ -1,0 +1,74 @@
+{
+    "args": {
+        "note": "v11",
+        "gen_num": 200,
+        "save_path": "/data/arman/circuit_reasoning/ppm_construction/data_syn/data/grid_v11_240831.json",
+        "num_proc": 64
+    },
+    "num_nodes": {
+        "mean": 7.703125,
+        "std": 2.9280238331865287,
+        "max": 18.0,
+        "min": 1.0
+    },
+    "num_branches": {
+        "mean": 10.770833333333334,
+        "std": 5.10510195512511,
+        "max": 29.0,
+        "min": 0.0
+    },
+    "num_resistors": {
+        "mean": 6.338541666666667,
+        "std": 3.2427762601301815,
+        "max": 15.0,
+        "min": 0.0
+    },
+    "num_capacitors": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0,
+        "min": 0.0
+    },
+    "num_inductors": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0,
+        "min": 0.0
+    },
+    "num_voltage_sources": {
+        "mean": 1.21875,
+        "std": 1.0916646787513706,
+        "max": 6.0,
+        "min": 0.0
+    },
+    "num_current_sources": {
+        "mean": 1.5729166666666667,
+        "std": 1.34818389932119,
+        "max": 7.0,
+        "min": 0.0
+    },
+    "num_controlled_sources": {
+        "mean": 1.3697916666666667,
+        "std": 1.3360872438818838,
+        "max": 6.0,
+        "min": 0.0
+    },
+    "num_shorts": {
+        "mean": 0.2708333333333333,
+        "std": 0.5098849271050174,
+        "max": 2.0,
+        "min": 0.0
+    },
+    "num_voltage_measurements": {
+        "mean": 1.0833333333333333,
+        "std": 0.855943274340589,
+        "max": 4.0,
+        "min": 0.0
+    },
+    "num_current_measurements": {
+        "mean": 0.4947916666666667,
+        "std": 0.6769831656675239,
+        "max": 3.0,
+        "min": 0.0
+    }
+}

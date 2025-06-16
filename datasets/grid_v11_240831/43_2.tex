@@ -1,0 +1,64 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (0.4,0.4) to[generic, l=$19 \mathrm{ m\Omega }$, ] (2.7,0.4);
+\draw (0.4,2.8) to[generic, l=$83 \mathrm{ \Omega }$, ] (0.4,0.4);
+\draw (2.7,0.4) to [short] (5.7,0.4);
+\ctikzset{american};
+\draw (2.7,0.4) to[rmeter, t, v=$61 \mathrm{ V }$] (5.7,0.4);
+\ctikzset{european};
+\draw (2.7,0.4) to[short] (2.7,2.8);
+\draw (8.6,0.4) to[generic, l=$87 \mathrm{ \Omega }$, ] (5.7,0.4);
+\draw (5.7,0.4) to[I] (5.7,2.8);
+\draw[-latexslim] (6.3,1.2) to (6.3,2.0);
+\node at (6.7, 1.6) {$6 \mathrm{ A }$};
+\draw (8.6,0.4) to[generic, l=$54 \mathrm{ m\Omega }$, ] (11.9,0.4);
+\draw (8.6,2.8) to[generic, l=$13 \mathrm{ m\Omega }$, ] (8.6,0.4);
+\draw (11.9,2.8) to[generic, l=$10 \mathrm{ k\Omega }$, ] (11.9,0.4);
+\ctikzset{american}
+\draw (11.9,0.4) to[generic, v^=$U_{1}$] (11.9,2.8);
+\ctikzset{european}
+\draw (0.4,2.8) to[generic, l=$2 \mathrm{ \Omega }$, ] (2.7,2.8);
+\ctikzset{american}
+\draw (0.4,2.8) to[generic, v=$U_{5}$] (2.7,2.8);
+\ctikzset{european}
+\draw (0.4,2.8) to[generic, l=$87 \mathrm{ \Omega }$, ] (0.4,5.9);
+\draw (5.7,2.8) to[generic, l=$98 \mathrm{ \Omega }$, ] (2.7,2.8);
+\draw (2.7,5.9) to [short] (2.7,2.8);
+\ctikzset{american};
+\draw (2.7,5.9) to[rmeter, t, v=$78 \mathrm{ V }$] (2.7,2.8);
+\ctikzset{european};
+\draw (8.6,2.8) to[generic, l=$38 \mathrm{ \Omega }$, ] (5.7,2.8);
+\draw (8.6,2.8) to[I] (11.9,2.8);
+\draw[-latexslim] (9.8,2.2) to (10.6,2.2);
+\node at (10.2, 1.8) {$57 \mathrm{ A }$};
+\draw (8.6,5.9) to[cisource] (8.6,2.8);
+\draw[-latexslim] (8.0,4.8) to (8.0,4.0);
+\node at (7.6, 4.4) {$7 U_{ _0 }$};
+\ctikzset{american};
+\draw (8.6,2.8) to[open, v^=$U_{0}$] (8.6,5.9);
+\ctikzset{european};
+\draw (11.9,5.9) to[generic, l=$88 \mathrm{ \Omega }$, ] (11.9,2.8);
+\draw (0.4,5.9) to[short] (2.7,5.9);
+\draw (5.7,5.9) to[generic, l=$85 \mathrm{ \Omega }$, ] (2.7,5.9);
+\ctikzset{american}
+\draw (2.7,5.9) to[generic, v^=$U_{5}$] (5.7,5.9);
+\ctikzset{european}
+\draw (8.6,5.9) to [short] (5.7,5.9);
+\ctikzset{american};
+\draw (8.6,5.9) to[rmeter, t, v=$17 \mathrm{ mV }$] (5.7,5.9);
+\ctikzset{european};
+\draw (8.6,5.9) to[I] (11.9,5.9);
+\draw[-latexslim] (9.8,5.3) to (10.6,5.3);
+\node at (10.2, 4.9) {$82 \mathrm{ A }$};
+
+\end{circuitikz}
+
+\end{document}

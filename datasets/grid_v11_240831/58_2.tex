@@ -1,0 +1,30 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (-0.3,0.1) to[generic, l=$9 \mathrm{ \Omega }$, ] (2.8,0.1);
+\draw (-0.3,0.1) to[generic, l=$8 \mathrm{ k\Omega }$, ] (-0.3,2.7);
+\ctikzset{american}
+\draw (-0.3,0.1) to[generic, v=$U_{0}$] (-0.3,2.7);
+\ctikzset{european}
+\draw (2.8,0.1) to[generic, l=$82 \mathrm{ \Omega }$, ] (5.7,0.1);
+\draw (2.8,0.1) to[generic, l=$97 \mathrm{ \Omega }$, ] (2.8,2.7);
+\draw (5.7,0.1) to [short] (5.7,2.7);
+\ctikzset{american};
+\draw (5.7,0.1) to[rmeter, t, v=$94 \mathrm{ V }$] (5.7,2.7);
+\ctikzset{european};
+\draw (-0.3,2.7) to[generic, l=$81 \mathrm{ \Omega }$, ] (2.8,2.7);
+\draw (5.7,2.7) to[generic, l=$99 \mathrm{ \Omega }$, ] (2.8,2.7);
+\ctikzset{american}
+\draw (2.8,2.7) to[generic, v^=$U_{5}$] (5.7,2.7);
+\ctikzset{european}
+
+\end{circuitikz}
+
+\end{document}

@@ -1,0 +1,51 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (2.8,0.1) to[generic, l=$16 \mathrm{ \Omega }$, ] (0.5,0.1);
+\draw (0.5,0.1) to[generic, l=$57 \mathrm{ k\Omega }$, ] (0.5,2.9);
+\ctikzset{american}
+\draw (0.5,0.1) to[generic, v=$U_{0}$] (0.5,2.9);
+\ctikzset{european}
+\draw (2.8,0.1) to[generic, l=$63 \mathrm{ k\Omega }$, ] (5.7,0.1);
+\draw (2.8,0.1) to[I] (2.8,2.9);
+\draw[-latexslim] (2.2,1.1) to (2.2,1.9);
+\node at (1.8, 1.5) {$14 \mathrm{ kA }$};
+\draw (5.7,2.9) to[generic, l=$65 \mathrm{ k\Omega }$, ] (5.7,0.1);
+\ctikzset{american}
+\draw (5.7,0.1) to[generic, v^=$U_{1}$] (5.7,2.9);
+\ctikzset{european}
+\draw (2.8,2.9) to[generic, l=$78 \mathrm{ m\Omega }$, ] (0.5,2.9);
+\draw (0.5,5.6) to[generic, l=$18 \mathrm{ k\Omega }$, ] (0.5,2.9);
+\draw (2.8,2.9) to[cisource] (5.7,2.9);
+\draw[-latexslim] (3.9,2.3) to (4.7,2.3);
+\node at (4.3, 1.9) {$58 U_{ _0 }$};
+\draw (2.8,2.9) to [short] (2.8,5.6);
+\ctikzset{american};
+\draw (2.8,2.9) to[rmeter, t, v=$18 \mathrm{ kV }$] (2.8,5.6);
+\ctikzset{european};
+\draw (5.7,2.9) to [short] (5.7,5.6);
+\ctikzset{american};
+\draw (5.7,2.9) to[rmeter, t, v=$90 \mathrm{ V }$] (5.7,5.6);
+\ctikzset{european};
+\draw (5.7,2.9) to[rmeter, f>_=$I_{2}$] (5.7,5.6);
+\draw (2.8,5.6) to[generic, l=$96 \mathrm{ \Omega }$, ] (0.5,5.6);
+\draw (0.5,5.6) to[generic, l=$92 \mathrm{ \Omega }$, ] (0.5,9.5);
+\draw (2.8,5.6) to [short] (5.7,5.6);
+\ctikzset{american};
+\draw (2.8,5.6) to[rmeter, t, v=$27 \mathrm{ kV }$] (5.7,5.6);
+\ctikzset{european};
+\draw (2.8,9.5) to[generic, l=$58 \mathrm{ \Omega }$, ] (2.8,5.6);
+\draw (5.7,5.6) to[short] (5.7,9.5);
+\draw (2.8,9.5) to[short] (0.5,9.5);
+\draw (5.7,9.5) to[generic, l=$14 \mathrm{ k\Omega }$, ] (2.8,9.5);
+
+\end{circuitikz}
+
+\end{document}

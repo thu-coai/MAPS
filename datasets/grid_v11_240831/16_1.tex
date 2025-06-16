@@ -1,0 +1,36 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (-0.1,-0.3) to[I] (2.6,-0.3);
+\draw[-latexslim] (0.9,0.3) to (1.7,0.3);
+\node at (1.3, 0.7) {$I_{ S2 }$};
+\draw (-0.1,3.0) to[I] (-0.1,-0.3);
+\draw[-latexslim] (-0.7,1.7) to (-0.7,0.9);
+\node at (-1.1, 1.3) {$I_{ S1 }$};
+\draw (2.6,-0.3) to[I] (5.7,-0.3);
+\draw[-latexslim] (3.8,0.3) to (4.6,0.3);
+\node at (4.2, 0.7) {$I_{ S3 }$};
+\ctikzset{american}
+\draw (2.6,-0.3) to[rmeter, v=$U_{0}$] (5.7,-0.3);
+\ctikzset{european}
+\draw (2.6,-0.3) to[generic, l=$R_{ 1 }$, ] (2.6,3.0);
+\draw (2.6,-0.3) to[generic, f^>=$I$] (2.6,3.0);
+\draw (5.7,-0.3) to[short] (5.7,3.0);
+\draw (-0.1,3.0) to[I] (2.6,3.0);
+\draw[-latexslim] (0.9,3.6) to (1.7,3.6);
+\node at (1.3, 4.0) {$I_{ S4 }$};
+\draw (2.6,3.0) to [short] (5.7,3.0);
+\ctikzset{american};
+\draw (2.6,3.0) to[rmeter, t, v=$U_{ S1 }$] (5.7,3.0);
+\ctikzset{european};
+
+\end{circuitikz}
+
+\end{document}

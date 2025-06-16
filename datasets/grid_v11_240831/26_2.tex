@@ -1,0 +1,40 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (2.7,0.3) to [short] (-0.0,0.3);
+\ctikzset{american};
+\draw (2.7,0.3) to[rmeter, t, v=$18 \mathrm{ V }$] (-0.0,0.3);
+\ctikzset{european};
+\ctikzset{american};
+\draw (-0.0,0.3) to [short, v=$79 U_{ _0 }$] (-0.0,2.8);
+\ctikzset{european};
+\draw (-0.0,0.3) to[cvsource] (-0.0,2.8);\draw (2.7,2.8) to[I] (2.7,0.3);
+\draw (2.7,2.8) to[rmeter, f_>=$69 \mathrm{ mA }$] (2.7,0.3);
+\draw (2.7,2.8) to[generic, l=$31 \mathrm{ k\Omega }$, ] (-0.0,2.8);
+\draw (-0.0,2.8) to[generic, l=$69 \mathrm{ \Omega }$, ] (-0.0,5.9);
+\ctikzset{american}
+\draw (-0.0,2.8) to[generic, v=$U_{0}$] (-0.0,5.9);
+\ctikzset{european}
+\draw (2.7,5.9) to [short] (2.7,2.8);
+\ctikzset{american};
+\draw (2.7,5.9) to[rmeter, t, v=$35 \mathrm{ V }$] (2.7,2.8);
+\ctikzset{european};
+\draw (2.7,2.8) to[rmeter, f_>=$I$] (2.7,5.9);
+\ctikzset{american};
+\draw (-0.0,5.9) to [short, v=$8 U_{ _0 }$] (2.7,5.9);
+\ctikzset{european};
+\draw (-0.0,5.9) to[cvsource] (2.7,5.9);\draw (-0.0,5.9) to[short, f^>=$I_{0}$] (2.7,5.9);
+\draw (-0.0,5.9) to[generic, l=$84 \mathrm{ k\Omega }$, ] (-0.0,9.1);
+\draw (2.7,9.1) to[generic, l=$46 \mathrm{ \Omega }$, ] (2.7,5.9);
+\draw (2.7,9.1) to[short] (-0.0,9.1);
+
+\end{circuitikz}
+
+\end{document}

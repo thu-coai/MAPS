@@ -1,0 +1,56 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (2.7,-0.3) to[I] (-0.3,-0.3);
+\draw[-latexslim] (1.6,0.3) to (0.8,0.3);
+\node at (1.2, 0.7) {$71 \mathrm{ kA }$};
+\draw (-0.3,2.6) to [short] (-0.3,-0.3);
+\ctikzset{american};
+\draw (-0.3,2.6) to[rmeter, t, v=$55 \mathrm{ mV }$] (-0.3,-0.3);
+\ctikzset{european};
+\draw (5.7,-0.3) to[short] (2.7,-0.3);
+\draw (2.7,-0.3) to[generic, l=$19 \mathrm{ \Omega }$, ] (2.7,2.6);
+\ctikzset{american}
+\draw (2.7,-0.3) to[generic, v=$U_{0}$] (2.7,2.6);
+\ctikzset{european}
+\draw (8.8,-0.3) to[short] (5.7,-0.3);
+\ctikzset{american};
+\draw (5.7,2.6) to [short, v=$37 U_{ _0 }$] (5.7,-0.3);
+\ctikzset{european};
+\draw (5.7,2.6) to[cvsource] (5.7,-0.3);\draw (8.8,2.6) to[generic, l=$18 \mathrm{ k\Omega }$, ] (8.8,-0.3);
+\draw (-0.3,2.6) to[generic, l=$35 \mathrm{ \Omega }$, ] (2.7,2.6);
+\draw (-0.3,6.4) to[generic, l=$67 \mathrm{ \Omega }$, ] (-0.3,2.6);
+\draw (2.7,2.6) to[short] (5.7,2.6);
+\ctikzset{american};
+\draw (2.7,6.4) to [short, v=$75 I_{ _0 }$] (2.7,2.6);
+\ctikzset{european};
+\draw (2.7,6.4) to[cvsource] (2.7,2.6);\draw (2.7,2.6) to[short, f_>=$I_{0}$] (2.7,6.4);
+\draw (8.8,2.6) to[generic, l=$41 \mathrm{ \Omega }$, ] (5.7,2.6);
+\draw (5.7,6.4) to[I] (5.7,2.6);
+\draw[-latexslim] (5.1,4.9) to (5.1,4.1);
+\node at (4.7, 4.5) {$60 \mathrm{ A }$};
+\ctikzset{american}
+\draw (5.7,2.6) to[rmeter, v^=$U_{1}$] (5.7,6.4);
+\ctikzset{european}
+\draw (8.8,6.4) to[short] (8.8,2.6);
+\draw (-0.3,6.4) to[cisource] (2.7,6.4);
+\draw[-latexslim] (0.8,7.0) to (1.6,7.0);
+\node at (1.2, 7.4) {$94 I_{ _0 }$};
+\draw (2.7,6.4) to[I] (5.7,6.4);
+\draw[-latexslim] (3.8,7.0) to (4.6,7.0);
+\node at (4.2, 7.4) {$74 \mathrm{ A }$};
+\draw (5.7,6.4) to [short] (8.8,6.4);
+\ctikzset{american};
+\draw (5.7,6.4) to[rmeter, t, v=$43 \mathrm{ kV }$] (8.8,6.4);
+\ctikzset{european};
+
+\end{circuitikz}
+
+\end{document}

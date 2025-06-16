@@ -1,0 +1,53 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (3.4,0.0) to[I] (-0.5,0.0);
+\draw[-latexslim] (1.9,-0.6) to (1.1,-0.6);
+\node at (1.5, -1.0) {$81 \mathrm{ kA }$};
+\draw (-0.5,2.9) to[short] (-0.5,0.0);
+\draw (3.4,0.0) to[generic, l=$78 \mathrm{ \Omega }$, ] (6.3,0.0);
+\draw (3.4,0.0) to[generic, f^>=$I_{9}$] (6.3,0.0);
+\draw (3.4,2.9) to[generic, l=$50 \mathrm{ \Omega }$, ] (3.4,0.0);
+\draw (6.3,0.0) to[generic, l=$9 \mathrm{ k\Omega }$, ] (6.3,2.9);
+\draw (-0.5,2.9) to[generic, l=$35 \mathrm{ k\Omega }$, ] (3.4,2.9);
+\ctikzset{american}
+\draw (-0.5,2.9) to[generic, v=$U_{0}$] (3.4,2.9);
+\ctikzset{european}
+\draw (-0.5,2.9) to[generic, l=$80 \mathrm{ \Omega }$, ] (-0.5,6.3);
+\draw (3.4,2.9) to[generic, l=$89 \mathrm{ k\Omega }$, ] (6.3,2.9);
+\draw (3.4,2.9) to [short] (3.4,6.3);
+\ctikzset{american};
+\draw (3.4,2.9) to[rmeter, t, v=$55 \mathrm{ V }$] (3.4,6.3);
+\ctikzset{european};
+\draw (6.3,6.3) to[short] (6.3,2.9);
+\draw (-0.5,6.3) to[short] (3.4,6.3);
+\draw (-0.5,6.3) to[short] (-0.5,8.6);
+\draw (3.4,6.3) to[generic, l=$97 \mathrm{ k\Omega }$, ] (6.3,6.3);
+\draw (3.4,8.6) to[generic, l=$64 \mathrm{ \Omega }$, ] (3.4,6.3);
+\draw (6.3,8.6) to[generic, l=$22 \mathrm{ k\Omega }$, ] (6.3,6.3);
+\draw (3.4,8.6) to[generic, l=$20 \mathrm{ \Omega }$, ] (-0.5,8.6);
+\draw (-0.5,11.9) to[generic, l=$3 \mathrm{ \Omega }$, ] (-0.5,8.6);
+\draw (-0.5,8.6) to[generic, f_>=$I$] (-0.5,11.9);
+\draw (3.4,8.6) to[short] (6.3,8.6);
+\draw (3.4,8.6) to[generic, l=$21 \mathrm{ \Omega }$, ] (3.4,11.9);
+\draw (6.3,8.6) to[short] (6.3,11.9);
+\draw (-0.5,14.9) to[generic, l=$22 \mathrm{ \Omega }$, ] (-0.5,11.9);
+\draw (3.4,11.9) to[short] (3.4,14.9);
+\ctikzset{american};
+\draw (6.3,14.9) to [short, v=$17 U_{ _0 }$] (6.3,11.9);
+\ctikzset{european};
+\draw (6.3,14.9) to[cvsource] (6.3,11.9);\draw (-0.5,14.9) to[generic, l=$48 \mathrm{ \Omega }$, ] (3.4,14.9);
+\draw (6.3,14.9) to[I] (3.4,14.9);
+\draw[-latexslim] (5.3,14.3) to (4.5,14.3);
+\node at (4.9, 13.9) {$63 \mathrm{ A }$};
+
+\end{circuitikz}
+
+\end{document}

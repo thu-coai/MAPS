@@ -1,0 +1,29 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (2.9,-0.2) to[short] (0.1,-0.2);
+\draw (0.1,-0.2) to[short] (0.1,2.5);
+\draw (2.9,-0.2) to[generic, l=$81 \mathrm{ \Omega }$, ] (2.9,2.5);
+\draw (0.1,2.5) to[generic, l=$84 \mathrm{ k\Omega }$, ] (2.9,2.5);
+\draw (0.1,6.2) to[cisource] (0.1,2.5);
+\draw[-latexslim] (0.7,4.7) to (0.7,3.9);
+\node at (1.1, 4.3) {$20 U_{ _2 }$};
+\ctikzset{american};
+\draw (0.1,2.5) to[open, v^=$U_{2}$] (0.1,6.2);
+\ctikzset{european};
+\draw (2.9,6.2) to[short] (2.9,2.5);
+\draw (2.9,6.2) to[generic, l=$40 \mathrm{ \Omega }$, ] (0.1,6.2);
+\ctikzset{american}
+\draw (0.1,6.2) to[generic, v^=$U_{0}$] (2.9,6.2);
+\ctikzset{european}
+
+\end{circuitikz}
+
+\end{document}

@@ -1,0 +1,51 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (2.6,-0.1) to[I] (0.4,-0.1);
+\draw[-latexslim] (1.9,0.5) to (1.1,0.5);
+\node at (1.5, 0.9) {$90 \mathrm{ A }$};
+\ctikzset{american}
+\draw (0.4,-0.1) to[rmeter, v^=$U_{0}$] (2.6,-0.1);
+\ctikzset{european}
+\draw (0.4,-0.1) to[generic, l=$66 \mathrm{ \Omega }$, ] (0.4,3.2);
+\draw (2.6,-0.1) to[generic, l=$11 \mathrm{ k\Omega }$, ] (6.5,-0.1);
+\draw (2.6,-0.1) to[short] (2.6,3.2);
+\draw (6.5,3.2) to[I] (6.5,-0.1);
+\draw[-latexslim] (7.1,2.0) to (7.1,1.2);
+\node at (7.5, 1.6) {$50 \mathrm{ A }$};
+\draw (0.4,3.2) to [short] (2.6,3.2);
+\ctikzset{american};
+\draw (0.4,3.2) to[rmeter, t, v=$41 \mathrm{ V }$] (2.6,3.2);
+\ctikzset{european};
+\draw (0.4,3.2) to[short] (0.4,5.8);
+\draw (2.6,3.2) to[short] (6.5,3.2);
+\draw (2.6,5.8) to[cisource] (2.6,3.2);
+\draw[-latexslim] (2.0,4.9) to (2.0,4.1);
+\node at (1.6, 4.5) {$87 U_{ _2 }$};
+\draw (6.5,3.2) to[generic, l=$36 \mathrm{ k\Omega }$, ] (6.5,5.8);
+\draw (6.5,3.2) to[generic, f^>=$I$] (6.5,5.8);
+\draw (2.6,5.8) to[generic, l=$63 \mathrm{ k\Omega }$, ] (0.4,5.8);
+\draw (0.4,5.8) to[generic, f^>=$I_{7}$] (2.6,5.8);
+\draw (0.4,9.2) to[short] (0.4,5.8);
+\draw (6.5,5.8) to[cisource] (2.6,5.8);
+\draw[-latexslim] (4.9,5.2) to (4.1,5.2);
+\node at (4.5, 4.8) {$37 U_{ _2 }$};
+\draw (2.6,5.8) to[I] (2.6,9.2);
+\draw (2.6,5.8) to[rmeter, f_>=$10 \mathrm{ A }$] (2.6,9.2);
+\draw (6.5,5.8) to[short] (6.5,9.2);
+\draw (0.4,9.2) to[generic, l=$85 \mathrm{ k\Omega }$, ] (2.6,9.2);
+\ctikzset{american}
+\draw (0.4,9.2) to[generic, v=$U_{2}$] (2.6,9.2);
+\ctikzset{european}
+\draw (6.5,9.2) to[short] (2.6,9.2);
+
+\end{circuitikz}
+
+\end{document}

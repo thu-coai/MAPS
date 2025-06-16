@@ -1,0 +1,33 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (-0.0,-0.0) to [short] (3.2,-0.0);
+\ctikzset{american};
+\draw (-0.0,-0.0) to[rmeter, t, v=$U_{ S1 }$] (3.2,-0.0);
+\ctikzset{european};
+\draw (-0.0,-0.0) to[short] (-0.0,2.8);
+\draw (3.2,-0.0) to[I] (6.2,-0.0);
+\draw (3.2,-0.0) to[rmeter, f^>=$I_{ S2 }$] (6.2,-0.0);
+\draw (6.2,2.8) to[short] (6.2,-0.0);
+\draw (3.2,2.8) to[generic, l=$R_{ 3 }$, ] (-0.0,2.8);
+\draw (-0.0,2.8) to[generic, l=$R_{ 1 }$, ] (-0.0,6.4);
+\draw (6.2,2.8) to[short] (3.2,2.8);
+\draw (3.2,2.8) to[I] (3.2,6.4);
+\draw (3.2,2.8) to[rmeter, f_>=$I_{ S1 }$] (3.2,6.4);
+\draw (6.2,6.4) to[generic, l=$R_{ 2 }$, ] (6.2,2.8);
+\draw (3.2,6.4) to[generic, l=$R_{ 4 }$, ] (-0.0,6.4);
+\ctikzset{american}
+\draw (-0.0,6.4) to[generic, v^=$U_{0}$] (3.2,6.4);
+\ctikzset{european}
+\draw (3.2,6.4) to[generic, l=$R_{ 5 }$, ] (6.2,6.4);
+
+\end{circuitikz}
+
+\end{document}

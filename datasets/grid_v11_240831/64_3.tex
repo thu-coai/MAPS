@@ -1,0 +1,34 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (0.5,0.2) to[generic, l=$R_{ 5 }$, ] (3.0,0.2);
+\draw (0.5,3.5) to[generic, l=$R_{ 1 }$, ] (0.5,0.2);
+\draw (3.0,0.2) to[I] (6.0,0.2);
+\draw[-latexslim] (4.1,0.8) to (4.9,0.8);
+\node at (4.5, 1.2) {$I_{ S1 }$};
+\ctikzset{american}
+\draw (3.0,0.2) to[rmeter, v=$U_{0}$] (6.0,0.2);
+\ctikzset{european}
+\draw (3.0,0.2) to[generic, l=$R_{ 2 }$, ] (3.0,3.5);
+\draw (3.0,0.2) to[generic, f^>=$I_{3}$] (3.0,3.5);
+\draw (6.0,0.2) to[generic, l=$R_{ 3 }$, ] (6.0,3.5);
+\draw (3.0,3.5) to[generic, l=$R_{ 6 }$, ] (0.5,3.5);
+\draw (0.5,3.5) to[short] (0.5,5.6);
+\draw (6.0,3.5) to[generic, l=$R_{ 7 }$, ] (3.0,3.5);
+\draw (3.0,3.5) to[generic, l=$R_{ 4 }$, ] (3.0,5.6);
+\draw (6.0,5.6) to[cisource] (6.0,3.5);
+\draw[-latexslim] (6.6,4.9) to (6.6,4.1);
+\node at (7.0, 4.5) {$\beta_{ 1 } U_{ _0 }$};
+\draw (0.5,5.6) to[short] (3.0,5.6);
+\draw (6.0,5.6) to[generic, l=$R_{ 8 }$, ] (3.0,5.6);
+
+\end{circuitikz}
+
+\end{document}

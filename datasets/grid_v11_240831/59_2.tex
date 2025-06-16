@@ -1,0 +1,71 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (-0.4,-0.0) to[generic, l=$82 \mathrm{ k\Omega }$, ] (2.6,-0.0);
+\draw (-0.4,-0.0) to[cisource] (-0.4,2.9);
+\draw[-latexslim] (0.2,1.1) to (0.2,1.9);
+\node at (0.6, 1.5) {$37 I_{ _0 }$};
+\ctikzset{american};
+\draw (-0.4,-0.0) to[open, v=$U_{9}$] (-0.4,2.9);
+\ctikzset{european};
+\draw (5.9,-0.0) to[cisource] (2.6,-0.0);
+\draw[-latexslim] (4.6,-0.6) to (3.8,-0.6);
+\node at (4.2, -1.0) {$50 I_{ _0 }$};
+\ctikzset{american};
+\draw (2.6,-0.0) to[open, v^=$U_{0}$] (5.9,-0.0);
+\ctikzset{european};
+\draw (2.6,-0.0) to[short] (2.6,2.9);
+\draw (5.9,-0.0) to[generic, l=$78 \mathrm{ \Omega }$, ] (9.3,-0.0);
+\draw (5.9,2.9) to[cisource] (5.9,-0.0);
+\draw[-latexslim] (6.5,1.9) to (6.5,1.1);
+\node at (6.9, 1.5) {$17 U_{ _2 }$};
+\draw (9.3,2.9) to[generic, l=$7 \mathrm{ \Omega }$, ] (9.3,-0.0);
+\draw (-0.4,2.9) to[generic, l=$52 \mathrm{ \Omega }$, ] (2.6,2.9);
+\ctikzset{american};
+\draw (-0.4,2.9) to [short, v=$42 U_{ _2 }$] (-0.4,6.3);
+\ctikzset{european};
+\draw (-0.4,2.9) to[cvsource] (-0.4,6.3);\draw (5.9,2.9) to[short] (2.6,2.9);
+\draw (2.6,6.3) to [short] (2.6,2.9);
+\ctikzset{american};
+\draw (2.6,6.3) to[rmeter, t, v=$45 \mathrm{ V }$] (2.6,2.9);
+\ctikzset{european};
+\draw (2.6,2.9) to[rmeter, f_>=$I_{0}$] (2.6,6.3);
+\ctikzset{american};
+\draw (9.3,2.9) to [short, v=$61 I_{ _0 }$] (5.9,2.9);
+\ctikzset{european};
+\draw (9.3,2.9) to[cvsource] (5.9,2.9);\draw (5.9,2.9) to [short] (5.9,6.3);
+\ctikzset{american};
+\draw (5.9,2.9) to[rmeter, t, v=$80 \mathrm{ mV }$] (5.9,6.3);
+\ctikzset{european};
+\draw (9.3,6.3) to[short] (9.3,2.9);
+\draw (-0.4,6.3) to[generic, l=$84 \mathrm{ \Omega }$, ] (2.6,6.3);
+\draw (-0.4,8.9) to[generic, l=$82 \mathrm{ \Omega }$, ] (-0.4,6.3);
+\draw (2.6,6.3) to[short] (5.9,6.3);
+\draw (2.6,6.3) to[short] (2.6,8.9);
+\draw (9.3,6.3) to[generic, l=$26 \mathrm{ k\Omega }$, ] (5.9,6.3);
+\ctikzset{american}
+\draw (5.9,6.3) to[generic, v^=$U_{2}$] (9.3,6.3);
+\ctikzset{european}
+\draw (5.9,8.9) to[generic, l=$47 \mathrm{ \Omega }$, ] (5.9,6.3);
+\draw (9.3,6.3) to[generic, l=$26 \mathrm{ k\Omega }$, ] (9.3,8.9);
+\draw (2.6,8.9) to [short] (-0.4,8.9);
+\ctikzset{american};
+\draw (2.6,8.9) to[rmeter, t, v=$42 \mathrm{ kV }$] (-0.4,8.9);
+\ctikzset{european};
+\draw (5.9,8.9) to[I] (2.6,8.9);
+\draw[-latexslim] (4.6,9.5) to (3.8,9.5);
+\node at (4.2, 9.9) {$77 \mathrm{ kA }$};
+\draw (9.3,8.9) to[I] (5.9,8.9);
+\draw[-latexslim] (8.0,9.5) to (7.2,9.5);
+\node at (7.6, 9.9) {$10 \mathrm{ kA }$};
+
+\end{circuitikz}
+
+\end{document}
