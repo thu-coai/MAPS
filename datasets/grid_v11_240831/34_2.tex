@@ -1,0 +1,38 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (2.5,-0.5) to[generic, l=$R_{ 3 }$, ] (0.5,-0.5);
+\draw (0.5,-0.5) to[short] (0.5,3.4);
+\draw (0.5,-0.5) to[short, f>_=$I_{6}$] (0.5,3.4);
+\draw (2.5,-0.5) to[short] (6.4,-0.5);
+\draw (2.5,3.4) to[generic, l=$R_{ 1 }$, ] (2.5,-0.5);
+\ctikzset{american}
+\draw (2.5,-0.5) to[generic, v^=$U_{0}$] (2.5,3.4);
+\ctikzset{european}
+\draw (9.5,-0.5) to[short] (6.4,-0.5);
+\draw (6.4,3.4) to[short] (6.4,-0.5);
+\ctikzset{american};
+\draw (9.5,-0.5) to [short, v=$\beta_{ 1 } U_{ _6 }$] (12.3,-0.5);
+\ctikzset{european};
+\draw (9.5,-0.5) to[cvsource] (12.3,-0.5);\draw (9.5,-0.5) to[short, f^>=$I_{8}$] (12.3,-0.5);
+\draw (12.3,-0.5) to[generic, l=$R_{ 2 }$, ] (12.3,3.4);
+\draw (12.3,-0.5) to[generic, f_>=$I$] (12.3,3.4);
+\draw (0.5,3.4) to[generic, l=$R_{ 4 }$, ] (2.5,3.4);
+\ctikzset{american}
+\draw (0.5,3.4) to[generic, v=$U_{6}$] (2.5,3.4);
+\ctikzset{european}
+\draw (2.5,3.4) to[generic, l=$R_{ 5 }$, ] (6.4,3.4);
+\draw (2.5,3.4) to[generic, f>_=$I_{2}$] (6.4,3.4);
+\draw (6.4,3.4) to[generic, l=$R_{ 6 }$, ] (9.5,3.4);
+\draw (9.5,3.4) to[short] (12.3,3.4);
+
+\end{circuitikz}
+
+\end{document}

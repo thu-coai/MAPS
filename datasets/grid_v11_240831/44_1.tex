@@ -1,0 +1,42 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (0.4,-0.5) to[short] (3.1,-0.5);
+\draw (0.4,-0.5) to[short, f^>=$I_{3}$] (3.1,-0.5);
+\draw (0.4,2.5) to[generic, l=$85 \mathrm{ m\Omega }$, ] (0.4,-0.5);
+\draw (3.1,-0.5) to[short] (6.5,-0.5);
+\draw (3.1,2.5) to[generic, l=$46 \mathrm{ \Omega }$, ] (3.1,-0.5);
+\draw (6.5,2.5) to[cisource] (6.5,-0.5);
+\draw[-latexslim] (7.1,1.4) to (7.1,0.6);
+\node at (7.5, 1.0) {$38 U_{ _0 }$};
+\ctikzset{american};
+\draw (6.5,-0.5) to[open, v^=$U_{0}$] (6.5,2.5);
+\ctikzset{european};
+\draw (3.1,2.5) to[generic, l=$78 \mathrm{ \Omega }$, ] (0.4,2.5);
+\draw (0.4,2.5) to[generic, f^>=$I_{2}$] (3.1,2.5);
+\draw (0.4,2.5) to[generic, l=$37 \mathrm{ k\Omega }$, ] (0.4,6.3);
+\ctikzset{american}
+\draw (0.4,2.5) to[generic, v=$U_{8}$] (0.4,6.3);
+\ctikzset{european}
+\ctikzset{american};
+\draw (6.5,2.5) to [short, v=$8 U_{ _8 }$] (3.1,2.5);
+\ctikzset{european};
+\draw (6.5,2.5) to[cvsource] (3.1,2.5);\draw (3.1,2.5) to[I] (3.1,6.3);
+\draw[-latexslim] (2.5,4.0) to (2.5,4.8);
+\node at (2.1, 4.4) {$34 \mathrm{ A }$};
+\draw (6.5,2.5) to[generic, l=$34 \mathrm{ \Omega }$, ] (6.5,6.3);
+\draw (3.1,6.3) to[generic, l=$19 \mathrm{ \Omega }$, ] (0.4,6.3);
+\ctikzset{american};
+\draw (6.5,6.3) to [short, v=$83 U_{ _0 }$] (3.1,6.3);
+\ctikzset{european};
+\draw (6.5,6.3) to[cvsource] (3.1,6.3);
+\end{circuitikz}
+
+\end{document}

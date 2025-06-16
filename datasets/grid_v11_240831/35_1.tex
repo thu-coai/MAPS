@@ -1,0 +1,32 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (2.8,0.2) to[generic, l=$68 \mathrm{ \Omega }$, ] (-0.4,0.2);
+\draw (-0.4,0.2) to[generic, f>_=$I_{7}$] (2.8,0.2);
+\draw (-0.4,3.5) to[generic, l=$8 \mathrm{ \Omega }$, ] (-0.4,0.2);
+\draw (-0.4,0.2) to[generic, f^>=$I_{0}$] (-0.4,3.5);
+\draw (2.8,0.2) to[I] (2.8,3.5);
+\draw[-latexslim] (2.2,1.5) to (2.2,2.3);
+\node at (1.8, 1.9) {$65 \mathrm{ A }$};
+\ctikzset{american}
+\draw (2.8,0.2) to[rmeter, v=$U_{0}$] (2.8,3.5);
+\ctikzset{european}
+\draw (-0.4,3.5) to[generic, l=$10 \mathrm{ \Omega }$, ] (2.8,3.5);
+\draw (-0.4,6.2) to[I] (-0.4,3.5);
+\draw[-latexslim] (0.2,5.3) to (0.2,4.5);
+\node at (0.6, 4.9) {$86 \mathrm{ A }$};
+\draw (2.8,3.5) to[cisource] (2.8,6.2);
+\draw[-latexslim] (3.4,4.5) to (3.4,5.3);
+\node at (3.8, 4.9) {$81 I_{ _0 }$};
+\draw (2.8,6.2) to[short] (-0.4,6.2);
+
+\end{circuitikz}
+
+\end{document}

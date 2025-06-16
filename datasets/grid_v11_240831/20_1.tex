@@ -1,0 +1,54 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (0.5,-0.1) to[short] (3.4,-0.1);
+\ctikzset{american};
+\draw (0.5,-0.1) to [short, v=$\beta_{ 1 } U_{ _3 }$] (0.5,3.0);
+\ctikzset{european};
+\draw (0.5,-0.1) to[cvsource] (0.5,3.0);\draw (3.4,-0.1) to [short] (6.0,-0.1);
+\ctikzset{american};
+\draw (3.4,-0.1) to[rmeter, t, v=$U_{ S2 }$] (6.0,-0.1);
+\ctikzset{european};
+\draw (6.0,3.0) to[I] (6.0,-0.1);
+\draw[-latexslim] (6.6,1.9) to (6.6,1.1);
+\node at (7.0, 1.5) {$I_{ S1 }$};
+\draw (3.4,3.0) to[generic, l=$R_{ 6 }$, ] (0.5,3.0);
+\draw (0.5,5.8) to[generic, l=$R_{ 1 }$, ] (0.5,3.0);
+\draw (3.4,3.0) to[short] (3.4,5.8);
+\draw (6.0,3.0) to [short] (6.0,5.8);
+\ctikzset{american};
+\draw (6.0,3.0) to[rmeter, t, v=$U_{ S1 }$] (6.0,5.8);
+\ctikzset{european};
+\ctikzset{american};
+\draw (3.4,5.8) to [short, v=$\beta_{ 2 } U_{ _3 }$] (0.5,5.8);
+\ctikzset{european};
+\draw (3.4,5.8) to[cvsource] (0.5,5.8);\draw (0.5,8.5) to[short] (0.5,5.8);
+\draw (6.0,5.8) to[generic, l=$R_{ 7 }$, ] (3.4,5.8);
+\draw (3.4,8.5) to[generic, l=$R_{ 2 }$, ] (3.4,5.8);
+\draw (6.0,8.5) to[I] (6.0,5.8);
+\draw[-latexslim] (5.4,7.5) to (5.4,6.7);
+\node at (5.0, 7.1) {$I_{ S2 }$};
+\draw (0.5,8.5) to[short] (3.4,8.5);
+\draw (0.5,8.5) to[generic, l=$R_{ 3 }$, ] (0.5,11.5);
+\ctikzset{american}
+\draw (0.5,8.5) to[generic, v=$U_{0}$] (0.5,11.5);
+\ctikzset{european}
+\draw (6.0,8.5) to[generic, l=$R_{ 8 }$, ] (3.4,8.5);
+\draw (3.4,11.5) to[generic, l=$R_{ 4 }$, ] (3.4,8.5);
+\ctikzset{american}
+\draw (3.4,8.5) to[generic, v^=$U_{3}$] (3.4,11.5);
+\ctikzset{european}
+\draw (6.0,8.5) to[generic, l=$R_{ 5 }$, ] (6.0,11.5);
+\draw (0.5,11.5) to[generic, l=$R_{ 9 }$, ] (3.4,11.5);
+\draw (6.0,11.5) to[generic, l=$R_{ 10 }$, ] (3.4,11.5);
+
+\end{circuitikz}
+
+\end{document}

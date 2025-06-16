@@ -1,4 +1,6 @@
 import os
+import sys
+
 
 import json
 import concurrent.futures
@@ -15,7 +17,7 @@ args = parser.parse_args()
 label_key = "spice"
 
 note = args.note
-file_path = f"data_syn/data/{note}.json"
+file_path = f"ppm_construction/data_syn/data/{note}.json"
 dataset_path = "datasets/{}".format(note)
 img_suffix = ".jpg"
 

@@ -1,0 +1,51 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (-0.0,-0.2) to[generic, l=$34 \mathrm{ \Omega }$, ] (2.5,-0.2);
+\draw (-0.0,2.8) to[generic, l=$92 \mathrm{ k\Omega }$, ] (-0.0,-0.2);
+\draw (6.3,-0.2) to[short] (2.5,-0.2);
+\draw (2.5,2.8) to[generic, l=$5 \mathrm{ m\Omega }$, ] (2.5,-0.2);
+\draw (6.3,2.8) to[generic, l=$61 \mathrm{ k\Omega }$, ] (6.3,-0.2);
+\ctikzset{american}
+\draw (6.3,-0.2) to[generic, v^=$U_{2}$] (6.3,2.8);
+\ctikzset{european}
+\draw (2.5,2.8) to[generic, l=$37 \mathrm{ \Omega }$, ] (-0.0,2.8);
+\draw (-0.0,2.8) to[short] (-0.0,5.9);
+\draw (6.3,2.8) to[short] (2.5,2.8);
+\draw (2.5,5.9) to[I] (2.5,2.8);
+\draw[-latexslim] (1.9,4.8) to (1.9,4.0);
+\node at (1.5, 4.4) {$75 \mathrm{ A }$};
+\draw (6.3,2.8) to[I] (6.3,5.9);
+\draw[-latexslim] (6.9,4.0) to (6.9,4.8);
+\node at (7.3, 4.4) {$86 \mathrm{ kA }$};
+\draw (-0.0,5.9) to[short] (2.5,5.9);
+\draw (-0.0,9.0) to[generic, l=$92 \mathrm{ \Omega }$, ] (-0.0,5.9);
+\ctikzset{american}
+\draw (-0.0,5.9) to[generic, v^=$U_{0}$] (-0.0,9.0);
+\ctikzset{european}
+\draw (2.5,5.9) to[generic, l=$41 \mathrm{ \Omega }$, ] (6.3,5.9);
+\draw (2.5,9.0) to[generic, l=$30 \mathrm{ k\Omega }$, ] (2.5,5.9);
+\draw (6.3,9.0) to[I] (6.3,5.9);
+\draw (6.3,9.0) to[rmeter, f_>=$17 \mathrm{ A }$] (6.3,5.9);
+\draw (-0.0,9.0) to[generic, l=$70 \mathrm{ m\Omega }$, ] (2.5,9.0);
+\draw (-0.0,11.9) to [short] (-0.0,9.0);
+\ctikzset{american};
+\draw (-0.0,11.9) to[rmeter, t, v=$38 \mathrm{ mV }$] (-0.0,9.0);
+\ctikzset{european};
+\draw (2.5,9.0) to[cisource] (6.3,9.0);
+\draw[-latexslim] (4.0,9.6) to (4.8,9.6);
+\node at (4.4, 10.0) {$32 U_{ _2 }$};
+\draw (6.3,9.0) to[short] (6.3,11.9);
+\draw (-0.0,11.9) to[short] (2.5,11.9);
+\draw (6.3,11.9) to[generic, l=$77 \mathrm{ \Omega }$, ] (2.5,11.9);
+
+\end{circuitikz}
+
+\end{document}

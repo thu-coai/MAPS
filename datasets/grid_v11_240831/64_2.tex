@@ -1,0 +1,50 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (3.0,-0.4) to[I] (-0.0,-0.4);
+\draw[-latexslim] (1.9,-1.0) to (1.1,-1.0);
+\node at (1.5, -1.4) {$97 \mathrm{ A }$};
+\ctikzset{american}
+\draw (-0.0,-0.4) to[rmeter, v^=$U_{0}$] (3.0,-0.4);
+\ctikzset{european}
+\draw (-0.0,-0.4) to[short] (-0.0,3.5);
+\draw (3.0,-0.4) to[generic, l=$13 \mathrm{ \Omega }$, ] (6.3,-0.4);
+\draw (3.0,3.5) to[generic, l=$86 \mathrm{ m\Omega }$, ] (3.0,-0.4);
+\draw (6.3,-0.4) to[I] (9.3,-0.4);
+\draw[-latexslim] (7.4,-1.0) to (8.2,-1.0);
+\node at (7.8, -1.4) {$89 \mathrm{ mA }$};
+\ctikzset{american};
+\draw (6.3,-0.4) to [short, v=$21 U_{ _0 }$] (6.3,3.5);
+\ctikzset{european};
+\draw (6.3,-0.4) to[cvsource] (6.3,3.5);\draw (9.3,-0.4) to [short] (9.3,3.5);
+\ctikzset{american};
+\draw (9.3,-0.4) to[rmeter, t, v=$73 \mathrm{ mV }$] (9.3,3.5);
+\ctikzset{european};
+\draw (9.3,-0.4) to[rmeter, f>_=$I_{1}$] (9.3,3.5);
+\draw (-0.0,3.5) to[generic, l=$31 \mathrm{ \Omega }$, ] (3.0,3.5);
+\draw (-0.0,3.5) to[generic, f_>=$I_{5}$] (3.0,3.5);
+\draw (-0.0,3.5) to[generic, l=$81 \mathrm{ m\Omega }$, ] (-0.0,6.1);
+\draw (6.3,3.5) to[generic, l=$24 \mathrm{ k\Omega }$, ] (3.0,3.5);
+\draw (3.0,6.1) to[I] (3.0,3.5);
+\draw[-latexslim] (2.4,5.2) to (2.4,4.4);
+\node at (2.0, 4.8) {$34 \mathrm{ A }$};
+\draw (6.3,3.5) to[generic, l=$40 \mathrm{ \Omega }$, ] (9.3,3.5);
+\draw (6.3,3.5) to[generic, l=$62 \mathrm{ \Omega }$, ] (6.3,6.1);
+\draw (6.3,3.5) to[generic, f_>=$I_{1}$] (6.3,6.1);
+\draw (9.3,6.1) to[generic, l=$86 \mathrm{ k\Omega }$, ] (9.3,3.5);
+\draw (3.0,6.1) to[generic, l=$52 \mathrm{ k\Omega }$, ] (-0.0,6.1);
+\draw (3.0,6.1) to[short] (6.3,6.1);
+\draw (9.3,6.1) to[cisource] (6.3,6.1);
+\draw[-latexslim] (8.2,5.5) to (7.4,5.5);
+\node at (7.8, 5.1) {$93 U_{ _0 }$};
+
+\end{circuitikz}
+
+\end{document}

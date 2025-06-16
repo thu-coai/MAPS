@@ -1,0 +1,47 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\tikzset{every node/.style={font=\large}}
+\tikzset{every draw/.style={font=\large}}
+\begin{document}
+
+\begin{circuitikz}[line width=1pt]
+\ctikzset{tripoles/en amp/input height=0.5};
+\ctikzset{inductors/scale=1.2, inductor=american}
+\draw (3.2,-0.1) to[generic, l=$4 \mathrm{ m\Omega }$, ] (-0.2,-0.1);
+\ctikzset{american}
+\draw (-0.2,-0.1) to[generic, v^=$U_{7}$] (3.2,-0.1);
+\ctikzset{european}
+\draw (-0.2,-0.1) to[generic, l=$89 \mathrm{ \Omega }$, ] (-0.2,3.0);
+\draw (3.2,-0.1) to[generic, l=$71 \mathrm{ m\Omega }$, ] (6.0,-0.1);
+\draw (3.2,-0.1) to[generic, l=$46 \mathrm{ k\Omega }$, ] (3.2,3.0);
+\draw (6.0,-0.1) to[short] (9.4,-0.1);
+\draw (6.0,-0.1) to [short] (6.0,3.0);
+\ctikzset{american};
+\draw (6.0,-0.1) to[rmeter, t, v=$69 \mathrm{ V }$] (6.0,3.0);
+\ctikzset{european};
+\draw (12.4,-0.1) to[I] (9.4,-0.1);
+\draw[-latexslim] (11.3,-0.7) to (10.5,-0.7);
+\node at (10.9, -1.1) {$96 \mathrm{ A }$};
+\draw (9.4,-0.1) to[generic, l=$96 \mathrm{ \Omega }$, ] (9.4,3.0);
+\draw (12.4,3.0) to[short] (12.4,-0.1);
+\draw (3.2,3.0) to[short] (-0.2,3.0);
+\draw (-0.2,3.0) to[generic, l=$22 \mathrm{ k\Omega }$, ] (-0.2,5.5);
+\draw (3.2,3.0) to[generic, l=$59 \mathrm{ \Omega }$, ] (6.0,3.0);
+\draw (3.2,3.0) to[generic, l=$79 \mathrm{ \Omega }$, ] (3.2,5.5);
+\draw (6.0,3.0) to[generic, l=$31 \mathrm{ k\Omega }$, ] (9.4,3.0);
+\draw (9.4,3.0) to[generic, l=$28 \mathrm{ \Omega }$, ] (12.4,3.0);
+\draw (9.4,3.0) to[short] (9.4,5.5);
+\draw (12.4,3.0) to[generic, l=$2 \mathrm{ k\Omega }$, ] (12.4,5.5);
+\draw (3.2,5.5) to[generic, l=$93 \mathrm{ k\Omega }$, ] (-0.2,5.5);
+\draw (3.2,5.5) to[generic, l=$28 \mathrm{ \Omega }$, ] (6.0,5.5);
+\draw (6.0,5.5) to[short] (9.4,5.5);
+\draw (6.0,5.5) to[short, f^>=$I_{0}$] (9.4,5.5);
+\draw (9.4,5.5) to[generic, l=$55 \mathrm{ \Omega }$, ] (12.4,5.5);
+\ctikzset{american}
+\draw (9.4,5.5) to[generic, v=$U_{0}$] (12.4,5.5);
+\ctikzset{european}
+
+\end{circuitikz}
+
+\end{document}
